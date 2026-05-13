@@ -84,14 +84,14 @@
 
         <div class="row align-items-start content">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <p style="font-size:18px;margin-bottom:2px;color:#555;">Kia Ora, I'm</p>
+            <p style="font-size:16px;margin-bottom:2px;color:#555;">Kia Ora, I'm</p>
             <div style="width:36px;height:3px;background:#e67e22;border-radius:2px;margin-bottom:10px;"></div>
-            <h2 style="font-family:'Montserrat',sans-serif;font-weight:900;font-size:clamp(42px,6vw,68px);line-height:1;letter-spacing:-1px;margin-bottom:12px;color:#1a2340;">Faruk <span style="color:#e67e22;">Ahmed</span></h2>
-            <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:clamp(15px,2.2vw,19px);color:#1a2340;line-height:1.45;margin-bottom:10px;">Business Analyst specialising in <span style="color:#e67e22;">Digital Transformation</span>, <span style="color:#e67e22;">Customer Experience</span> &amp; <span style="color:#e67e22;">Agile Delivery.</span></h3>
-            <p style="font-size:14px;color:#666;line-height:1.7;margin-bottom:20px;max-width:460px;">Delivering enterprise-scale transformation initiatives that improve customer experience, operational efficiency, and digital adoption.</p>
-            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
-              <a href="#projects" class="btn btn-primary" style="display:inline-flex;align-items:center;gap:8px;"><i class="bi bi-briefcase-fill"></i> View My Projects</a>
-              <a href="assets/resume/Faruk_Ahmed_Resume.pdf" download class="btn btn-outline" style="display:inline-flex;align-items:center;gap:8px;"><i class="bi bi-download"></i> Download Resume</a>
+            <h2 style="font-family:'Montserrat',sans-serif;font-weight:900;font-size:clamp(40px,5.5vw,64px);line-height:1;letter-spacing:-1px;margin-bottom:12px;color:#1a2340;">Faruk <span style="color:#e67e22;">Ahmed</span></h2>
+            <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:clamp(14px,2vw,18px);color:#1a2340;line-height:1.45;margin-bottom:10px;">Business Analyst specialising in <span style="color:#e67e22;">Digital Transformation</span>, <span style="color:#e67e22;">Customer Experience</span> &amp; <span style="color:#e67e22;">Agile Delivery.</span></h3>
+            <p style="font-size:13.5px;color:#666;line-height:1.7;margin-bottom:16px;">Delivering enterprise-scale transformation initiatives that improve customer experience, operational efficiency, and digital adoption.</p>
+            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300" style="margin-bottom:16px;">
+              <a href="assets/resume/Faruk_Ahmed_Resume.pdf" download class="btn btn-primary" style="display:inline-flex;align-items:center;gap:8px;border-radius:25px;"><i class="bi bi-briefcase-fill"></i> View My Projects</a>
+              <a href="assets/resume/Faruk_Ahmed_Resume.pdf" download class="btn btn-outline" style="display:inline-flex;align-items:center;gap:8px;border-radius:25px;"><i class="bi bi-download"></i> Download Resume</a>
             </div>
             <!-- Professional Capability Badges -->
             <div data-aos="fade-up" data-aos-delay="380" style="display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 10px;">
@@ -1115,6 +1115,12 @@ My approach is rooted in curiosity and collaboration. I listen deeply, ask the r
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    // Fix: restore scroll position to top of hero on page load/refresh
+    if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+    window.addEventListener('load', function() { window.scrollTo(0, 0); });
+  </script>
 
 </body>
 
