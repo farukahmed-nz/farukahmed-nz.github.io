@@ -107,82 +107,78 @@
             <!-- Badges label -->
             <p style="font-size:10px;font-weight:700;color:#bbb;letter-spacing:1.4px;text-transform:uppercase;margin-bottom:9px;">Professional Capabilities</p>
 
-            <!-- 6 badges — 3-per-row, uniform size, centered -->
-            <div data-aos="fade-up" data-aos-delay="350" style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:20px;">
-              <span style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:6px;border:1.5px solid #e8e8e8;border-radius:12px;padding:12px 8px;font-size:12.5px;color:#333;font-weight:600;min-height:70px;">
-                <i class="bi bi-building" style="color:#e67e22;font-size:20px;"></i>Enterprise Transformation
-              </span>
-              <span style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:6px;border:1.5px solid #e8e8e8;border-radius:12px;padding:12px 8px;font-size:12.5px;color:#333;font-weight:600;min-height:70px;">
-                <i class="bi bi-people" style="color:#e67e22;font-size:20px;"></i>Stakeholder Management
-              </span>
-              <span style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:6px;border:1.5px solid #e8e8e8;border-radius:12px;padding:12px 8px;font-size:12.5px;color:#333;font-weight:600;min-height:70px;">
-                <i class="bi bi-cpu" style="color:#e67e22;font-size:20px;"></i>AI Enthusiast
-              </span>
-              <span style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:6px;border:1.5px solid #e8e8e8;border-radius:12px;padding:12px 8px;font-size:12.5px;color:#333;font-weight:600;min-height:70px;">
-                <i class="bi bi-gear" style="color:#e67e22;font-size:20px;"></i>Business Process Optimisation
-              </span>
-              <span style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:6px;border:1.5px solid #e8e8e8;border-radius:12px;padding:12px 8px;font-size:12.5px;color:#333;font-weight:600;min-height:70px;">
-                <i class="bi bi-display" style="color:#e67e22;font-size:20px;"></i>Product &amp; Platform Delivery
-              </span>
-              <span style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:6px;border:1.5px solid #e8e8e8;border-radius:12px;padding:12px 8px;font-size:12.5px;color:#333;font-weight:600;min-height:70px;">
-                <i class="bi bi-diagram-3" style="color:#e67e22;font-size:20px;"></i>Cross-Functional Leadership
-              </span>
+            <!-- 6 badges — compact left-aligned, mobile friendly -->
+            <style>
+              .cap-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:7px; margin-bottom:14px; }
+              .cap-badge { display:flex; flex-direction:row; align-items:center; gap:7px; border:1.5px solid #e8e8e8; border-radius:10px; padding:7px 9px; font-size:11.5px; color:#333; font-weight:600; line-height:1.3; }
+              .cap-badge i { color:#e67e22; font-size:17px; flex-shrink:0; }
+              @media (max-width:767px) {
+                .cap-grid { grid-template-columns:repeat(2,1fr); gap:6px; }
+                .cap-badge { font-size:10.5px; padding:6px 8px; gap:6px; }
+                .cap-badge i { font-size:15px; }
+              }
+            </style>
+            <div class="cap-grid" data-aos="fade-up" data-aos-delay="350">
+              <span class="cap-badge"><i class="bi bi-building"></i>Enterprise Transformation</span>
+              <span class="cap-badge"><i class="bi bi-people"></i>Stakeholder Management</span>
+              <span class="cap-badge"><i class="bi bi-cpu"></i>AI Enthusiast</span>
+              <span class="cap-badge"><i class="bi bi-gear"></i>Business Process Optimisation</span>
+              <span class="cap-badge"><i class="bi bi-display"></i>Product &amp; Platform Delivery</span>
+              <span class="cap-badge"><i class="bi bi-diagram-3"></i>Cross-Functional Leadership</span>
             </div>
 
             <!-- Divider -->
             <div style="width:100%;height:1px;background:#f0f0f0;margin-bottom:16px;"></div>
 
-            <!-- 6 metrics — 3x2 grid with internal gridlines, no outer border -->
-            <div class="hero-stats" data-aos="fade-up" data-aos-delay="400" style="display:grid;grid-template-columns:repeat(3,1fr);">
-
-              <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:10px;padding:16px 10px;border-right:1px solid #f0f0f0;border-bottom:1px solid #f0f0f0;">
-                <div style="width:46px;height:46px;background:#fff3e8;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="bi bi-calendar-check" style="color:#e67e22;font-size:22px;"></i></div>
-                <div>
-                  <span style="display:block;font-size:24px;font-weight:900;color:#1a2340;line-height:1;">14+</span>
-                  <span style="font-size:11px;color:#888;line-height:1.35;">Years Industry Experience</span>
-                </div>
+            <!-- 6 metrics — compact left-aligned, gridlines, mobile friendly -->
+            <style>
+              .stat-grid { display:grid; grid-template-columns:repeat(3,1fr); }
+              .stat-cell { display:flex; flex-direction:row; align-items:center; gap:9px; padding:10px 8px; }
+              .stat-cell .stat-icon { width:34px; height:34px; background:#fff3e8; border-radius:8px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+              .stat-cell .stat-icon i { color:#e67e22; font-size:17px; }
+              .stat-cell .stat-num { font-size:18px; font-weight:900; color:#1a2340; line-height:1; display:block; }
+              .stat-cell .stat-label { font-size:10px; color:#888; line-height:1.3; display:block; }
+              .stat-cell.rb { border-right:1px solid #f0f0f0; }
+              .stat-cell.bb { border-bottom:1px solid #f0f0f0; }
+              @media (max-width:767px) {
+                .stat-grid { grid-template-columns:repeat(2,1fr); }
+                .stat-cell { padding:8px 6px; gap:7px; }
+                .stat-cell .stat-icon { width:30px; height:30px; }
+                .stat-cell .stat-icon i { font-size:15px; }
+                .stat-cell .stat-num { font-size:16px; }
+                .stat-cell .stat-label { font-size:9.5px; }
+                .stat-cell:nth-child(2) { border-right:none; }
+                .stat-cell:nth-child(4) { border-right:none; }
+                .stat-cell:nth-child(5) { border-right:1px solid #f0f0f0; }
+                .stat-cell:nth-child(3) { border-bottom:1px solid #f0f0f0; }
+                .stat-cell:nth-child(4) { border-bottom:1px solid #f0f0f0; }
+              }
+            </style>
+            <div class="stat-grid hero-stats" data-aos="fade-up" data-aos-delay="400">
+              <div class="stat-cell rb bb">
+                <div class="stat-icon"><i class="bi bi-calendar-check"></i></div>
+                <div><span class="stat-num">14+</span><span class="stat-label">Years Industry Experience</span></div>
               </div>
-
-              <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:10px;padding:16px 10px;border-right:1px solid #f0f0f0;border-bottom:1px solid #f0f0f0;">
-                <div style="width:46px;height:46px;background:#fff3e8;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="bi bi-clipboard-data" style="color:#e67e22;font-size:22px;"></i></div>
-                <div>
-                  <span style="display:block;font-size:24px;font-weight:900;color:#1a2340;line-height:1;">7+</span>
-                  <span style="font-size:11px;color:#888;line-height:1.35;">Years BA Experience</span>
-                </div>
+              <div class="stat-cell rb bb">
+                <div class="stat-icon"><i class="bi bi-clipboard-data"></i></div>
+                <div><span class="stat-num">7+</span><span class="stat-label">Years BA Experience</span></div>
               </div>
-
-              <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:10px;padding:16px 10px;border-bottom:1px solid #f0f0f0;">
-                <div style="width:46px;height:46px;background:#fff3e8;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="bi bi-people-fill" style="color:#e67e22;font-size:22px;"></i></div>
-                <div>
-                  <span style="display:block;font-size:24px;font-weight:900;color:#1a2340;line-height:1;">80M+</span>
-                  <span style="font-size:11px;color:#888;line-height:1.35;">Customer Ecosystem Exposure</span>
-                </div>
+              <div class="stat-cell bb">
+                <div class="stat-icon"><i class="bi bi-people-fill"></i></div>
+                <div><span class="stat-num">80M+</span><span class="stat-label">Customer Ecosystem Exposure</span></div>
               </div>
-
-              <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:10px;padding:16px 10px;border-right:1px solid #f0f0f0;">
-                <div style="width:46px;height:46px;background:#fff3e8;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="bi bi-arrow-repeat" style="color:#e67e22;font-size:22px;"></i></div>
-                <div>
-                  <span style="display:block;font-size:24px;font-weight:900;color:#1a2340;line-height:1;">9</span>
-                  <span style="font-size:11px;color:#888;line-height:1.35;">Legacy Systems Replaced</span>
-                </div>
+              <div class="stat-cell rb">
+                <div class="stat-icon"><i class="bi bi-arrow-repeat"></i></div>
+                <div><span class="stat-num">9</span><span class="stat-label">Legacy Systems Replaced</span></div>
               </div>
-
-              <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:10px;padding:16px 10px;border-right:1px solid #f0f0f0;">
-                <div style="width:46px;height:46px;background:#fff3e8;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="bi bi-graph-up-arrow" style="color:#e67e22;font-size:22px;"></i></div>
-                <div>
-                  <span style="display:block;font-size:20px;font-weight:900;color:#1a2340;line-height:1;">55%→80%</span>
-                  <span style="font-size:11px;color:#888;line-height:1.35;">Self-Service Adoption Growth</span>
-                </div>
+              <div class="stat-cell rb">
+                <div class="stat-icon"><i class="bi bi-graph-up-arrow"></i></div>
+                <div><span class="stat-num" style="font-size:15px;">55%→80%</span><span class="stat-label">Self-Service Adoption Growth</span></div>
               </div>
-
-              <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:10px;padding:16px 10px;">
-                <div style="width:46px;height:46px;background:#fff3e8;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="bi bi-check2-all" style="color:#e67e22;font-size:22px;"></i></div>
-                <div>
-                  <span style="display:block;font-size:24px;font-weight:900;color:#1a2340;line-height:1;">15+</span>
-                  <span style="font-size:11px;color:#888;line-height:1.4;">Transformation Initiatives Delivered</span>
-                </div>
+              <div class="stat-cell">
+                <div class="stat-icon"><i class="bi bi-check2-all"></i></div>
+                <div><span class="stat-num">15+</span><span class="stat-label">Transformation Initiatives Delivered</span></div>
               </div>
-
             </div>
           </div><!-- /LEFT COLUMN -->
 
