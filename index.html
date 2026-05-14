@@ -130,56 +130,62 @@
             <!-- Divider -->
             <div style="width:100%;height:1px;background:#f0f0f0;margin-bottom:16px;"></div>
 
-            <!-- 6 metrics — 3 per row, 2 rows, left-aligned, gridlines, mobile friendly -->
-            <style>
-              .stat-grid { display:grid; grid-template-columns:repeat(3,1fr); width:100%; }
-              .stat-cell { display:flex; flex-direction:row; align-items:center; gap:9px; padding:9px 6px; min-width:0; }
-              .stat-cell .stat-icon { width:32px; height:32px; background:#fff3e8; border-radius:7px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
-              .stat-cell .stat-icon i { color:#e67e22; font-size:15px; }
-              .stat-cell .stat-num { font-size:17px; font-weight:900; color:#1a2340; line-height:1; display:block; }
-              .stat-cell .stat-label { font-size:9.5px; color:#888; line-height:1.3; display:block; }
-              .stat-cell.rb { border-right:1px solid #f0f0f0; }
-              .stat-cell.bb { border-bottom:1px solid #f0f0f0; }
-              @media (max-width:991px) {
-                .stat-grid { grid-template-columns:repeat(3,1fr); }
-              }
-              @media (max-width:575px) {
-                .stat-grid { grid-template-columns:repeat(2,1fr); }
-                .stat-cell.rb:nth-child(3) { border-right:none; }
-                .stat-cell.rb:nth-child(6) { border-right:none; }
-                .stat-cell:nth-child(2) { border-right:1px solid #f0f0f0; }
-                .stat-cell:nth-child(5) { border-right:1px solid #f0f0f0; }
-                .stat-cell:nth-child(3) { border-bottom:1px solid #f0f0f0; }
-                .stat-cell:nth-child(4) { border-bottom:1px solid #f0f0f0; }
-              }
-            </style>
-            <div class="stat-grid hero-stats" data-aos="fade-up" data-aos-delay="400">
-              <div class="stat-cell rb bb">
-                <div class="stat-icon"><i class="bi bi-calendar-check"></i></div>
-                <div><span class="stat-num">14+</span><span class="stat-label">Years Industry Experience</span></div>
+            <!-- 6 metrics — 3 per row, 2 rows, icon left, text centre, gridlines -->
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="400" style="display:grid;grid-template-columns:repeat(3,1fr);width:100%;">
+
+              <!-- Row 1 -->
+              <div style="display:flex;flex-direction:row;align-items:center;gap:10px;padding:12px 10px;border-right:1px solid #e8e8e8;border-bottom:1px solid #e8e8e8;">
+                <div style="width:38px;height:38px;background:#fff3e8;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="bi bi-calendar-check" style="color:#e67e22;font-size:18px;"></i></div>
+                <div style="flex:1;text-align:center;">
+                  <span style="display:block;font-size:20px;font-weight:900;color:#1a2340;line-height:1.1;">14+</span>
+                  <span style="font-size:10.5px;color:#888;line-height:1.3;">Years Industry Experience</span>
+                </div>
               </div>
-              <div class="stat-cell rb bb">
-                <div class="stat-icon"><i class="bi bi-clipboard-data"></i></div>
-                <div><span class="stat-num">7+</span><span class="stat-label">Years BA Experience</span></div>
+
+              <div style="display:flex;flex-direction:row;align-items:center;gap:10px;padding:12px 10px;border-right:1px solid #e8e8e8;border-bottom:1px solid #e8e8e8;">
+                <div style="width:38px;height:38px;background:#fff3e8;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="bi bi-clipboard-data" style="color:#e67e22;font-size:18px;"></i></div>
+                <div style="flex:1;text-align:center;">
+                  <span style="display:block;font-size:20px;font-weight:900;color:#1a2340;line-height:1.1;">7+</span>
+                  <span style="font-size:10.5px;color:#888;line-height:1.3;">Years BA Experience</span>
+                </div>
               </div>
-              <div class="stat-cell bb">
-                <div class="stat-icon"><i class="bi bi-people-fill"></i></div>
-                <div><span class="stat-num">80M+</span><span class="stat-label">Customer Ecosystem Exposure</span></div>
+
+              <div style="display:flex;flex-direction:row;align-items:center;gap:10px;padding:12px 10px;border-bottom:1px solid #e8e8e8;">
+                <div style="width:38px;height:38px;background:#fff3e8;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="bi bi-people-fill" style="color:#e67e22;font-size:18px;"></i></div>
+                <div style="flex:1;text-align:center;">
+                  <span style="display:block;font-size:20px;font-weight:900;color:#1a2340;line-height:1.1;">80M+</span>
+                  <span style="font-size:10.5px;color:#888;line-height:1.3;">Customer Ecosystem Exposure</span>
+                </div>
               </div>
-              <div class="stat-cell rb">
-                <div class="stat-icon"><i class="bi bi-arrow-repeat"></i></div>
-                <div><span class="stat-num">9</span><span class="stat-label">Legacy Systems Replaced</span></div>
+
+              <!-- Row 2 -->
+              <div style="display:flex;flex-direction:row;align-items:center;gap:10px;padding:12px 10px;border-right:1px solid #e8e8e8;">
+                <div style="width:38px;height:38px;background:#fff3e8;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="bi bi-arrow-repeat" style="color:#e67e22;font-size:18px;"></i></div>
+                <div style="flex:1;text-align:center;">
+                  <span style="display:block;font-size:20px;font-weight:900;color:#1a2340;line-height:1.1;">9</span>
+                  <span style="font-size:10.5px;color:#888;line-height:1.3;">Legacy Systems Replaced</span>
+                </div>
               </div>
-              <div class="stat-cell rb">
-                <div class="stat-icon"><i class="bi bi-graph-up-arrow"></i></div>
-                <div><span class="stat-num" style="font-size:14px;">55%→80%</span><span class="stat-label">Self-Service Adoption Growth</span></div>
+
+              <div style="display:flex;flex-direction:row;align-items:center;gap:10px;padding:12px 10px;border-right:1px solid #e8e8e8;">
+                <div style="width:38px;height:38px;background:#fff3e8;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="bi bi-graph-up-arrow" style="color:#e67e22;font-size:18px;"></i></div>
+                <div style="flex:1;text-align:center;">
+                  <span style="display:block;font-size:17px;font-weight:900;color:#1a2340;line-height:1.1;">55%→80%</span>
+                  <span style="font-size:10.5px;color:#888;line-height:1.3;">Self-Service Adoption Growth</span>
+                </div>
               </div>
-              <div class="stat-cell">
-                <div class="stat-icon"><i class="bi bi-check2-all"></i></div>
-                <div><span class="stat-num">15+</span><span class="stat-label">Transformation Initiatives Delivered</span></div>
+
+              <div style="display:flex;flex-direction:row;align-items:center;gap:10px;padding:12px 10px;">
+                <div style="width:38px;height:38px;background:#fff3e8;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="bi bi-check2-all" style="color:#e67e22;font-size:18px;"></i></div>
+                <div style="flex:1;text-align:center;">
+                  <span style="display:block;font-size:20px;font-weight:900;color:#1a2340;line-height:1.1;">15+</span>
+                  <span style="font-size:10.5px;color:#888;line-height:1.3;">Transformation Initiatives Delivered</span>
+                </div>
               </div>
+
             </div>
-          </div><!-- /LEFT COLUMN -->
+          
+          <!-- /LEFT COLUMN -->
 
           <!-- RIGHT COLUMN -->
           <div class="col-lg-5" style="padding-left:30px;">
@@ -220,7 +226,6 @@
 
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
             <div class="about-content">
-              <span class="subtitle">About Me</span>
 
               <h2>A Business Analyst & AI Enthusiast</h2>
 
