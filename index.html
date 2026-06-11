@@ -118,8 +118,8 @@
                 .cap-badge i { font-size:15px; }
               }
             </style>
-            <div class="cap-grid" data-aos="fade-up" data-aos-delay="350">
-              <span class="cap-badge"><i class="bi bi-building"></i>Enterprise Transformation</span>
+            <div class="cap-grid" data-aos="fade-up" data-aos-delay="350" style="justify-items:center;">
+              <span class="cap-badge" style="justify-content:center;"><i class="bi bi-building"></i>Enterprise Transformation</span>
               <span class="cap-badge"><i class="bi bi-people"></i>Stakeholder Management</span>
               <span class="cap-badge"><i class="bi bi-cpu"></i>AI Enthusiast</span>
               <span class="cap-badge"><i class="bi bi-gear"></i>Business Process Optimisation</span>
@@ -599,241 +599,218 @@
         <div class="row g-4">
 
           <style>
-  .pv3{background:#fff;border:1px solid #eee;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;transition:transform 0.2s,box-shadow 0.2s}
-  .pv3:hover{transform:translateY(-4px);box-shadow:0 10px 28px rgba(0,0,0,0.09)}
-  .pv3-vis{width:100%;height:152px;position:relative;flex-shrink:0;overflow:hidden}
-  .pv3-vl{position:absolute;top:9px;left:11px;font-size:9px;font-weight:600;letter-spacing:0.5px;text-transform:uppercase;color:rgba(255,255,255,0.6)}
-  .pv3-body{padding:13px;display:flex;flex-direction:column;flex:1}
-  .pv3-cat{font-size:9px;font-weight:700;letter-spacing:0.6px;text-transform:uppercase;color:#e67e22;margin-bottom:3px}
-  .pv3-title{font-size:12.5px;font-weight:700;color:#1a2340;line-height:1.35;margin-bottom:7px}
-  .pv3-role{display:inline-flex;align-items:center;gap:4px;font-size:9.5px;font-weight:600;padding:3px 8px;border-radius:20px;background:#EAF3DE;color:#27500A;border:0.5px solid #C0DD97;margin-bottom:8px;align-self:flex-start}
-  .pv3-irow{margin-bottom:5px}
-  .pv3-ilbls{display:flex;justify-content:space-between;font-size:9.5px;color:#777;margin-bottom:2px}
-  .pv3-itrack{background:#f0f0f0;border-radius:20px;height:4px;overflow:hidden}
-  .pv3-ifill{height:4px;border-radius:20px;background:#e67e22}
-  .pv3-tags{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:9px}
-  .pv3-tag{font-size:9px;padding:2px 6px;border-radius:20px;background:#f5f5f5;color:#666;border:0.5px solid #e8e8e8}
-  .pv3-btn{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;color:#e67e22;background:none;border:1.5px solid #e67e22;border-radius:20px;padding:5px 13px;cursor:pointer;margin-top:auto;align-self:flex-start}
-  .pv3-btn:hover{background:#e67e22;color:#fff}
+  .pv4{background:#fff;border:1px solid #eee;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;transition:transform 0.22s,box-shadow 0.22s}
+  .pv4:hover{transform:translateY(-5px);box-shadow:0 12px 32px rgba(0,0,0,0.10)}
+  .pv4-vis{width:100%;height:160px;position:relative;flex-shrink:0;overflow:hidden}
+  .pv4-vl{position:absolute;top:10px;left:14px;font-size:9px;font-weight:600;letter-spacing:0.6px;text-transform:uppercase;color:rgba(255,255,255,0.55)}
+  .pv4-body{padding:18px 16px;display:flex;flex-direction:column;flex:1}
+  .pv4-type{font-size:9.5px;font-weight:700;letter-spacing:0.6px;text-transform:uppercase;color:#e67e22;margin-bottom:5px}
+  .pv4-title{font-size:14px;font-weight:700;color:#1a2340;line-height:1.35;margin-bottom:8px}
+  .pv4-role{display:inline-flex;align-items:center;font-size:10px;font-weight:600;padding:3px 10px;border-radius:20px;background:#EAF3DE;color:#27500A;border:0.5px solid #C0DD97;margin-bottom:10px;align-self:flex-start}
+  .pv4-desc{font-size:12px;color:#555;line-height:1.65;margin-bottom:16px;flex:1}
+  .pv4-btn{display:block;text-align:center;font-size:13.5px;font-weight:700;color:#fff;background:#e67e22;border:none;border-radius:25px;padding:10px 0;cursor:pointer;width:100%;letter-spacing:0.2px}
+  .pv4-btn:hover{background:#c9691a}
 </style>
 
 <!-- Project Card 1 -->
 <div class="col-md-6 col-lg-4">
-  <div class="pv3">
-    <div class="pv3-vis" style="background:#0f1a30">
-      <svg width="100%" height="152" viewBox="0 0 220 152">
-        <text x="12" y="17" font-size="8.5" fill="rgba(255,255,255,0.5)" font-family="sans-serif">Workflow steps — before vs after</text>
-        <text x="12" y="38" font-size="8" fill="rgba(255,255,255,0.45)" font-family="sans-serif">Before</text>
-        <rect x="50" y="28" width="120" height="14" rx="3" fill="#e67e22" opacity="0.35"/>
-        <text x="174" y="39" font-size="8" fill="#e67e22" font-family="sans-serif" font-weight="bold">10 steps</text>
-        <text x="12" y="62" font-size="8" fill="rgba(255,255,255,0.45)" font-family="sans-serif">After</text>
-        <rect x="50" y="52" width="48" height="14" rx="3" fill="#e67e22" opacity="0.9"/>
-        <text x="102" y="63" font-size="8" fill="rgba(255,255,255,0.9)" font-family="sans-serif" font-weight="bold">4 steps</text>
-        <rect x="14" y="80" width="192" height="0.5" fill="rgba(255,255,255,0.08)"/>
-        <text x="14" y="96" font-size="22" font-weight="bold" fill="#e67e22" font-family="sans-serif">60%</text>
-        <text x="70" y="92" font-size="9" fill="rgba(255,255,255,0.65)" font-family="sans-serif">fewer steps</text>
-        <text x="70" y="104" font-size="8" fill="rgba(255,255,255,0.4)" font-family="sans-serif">3000+ agents benefited</text>
-        <text x="14" y="120" font-size="8" fill="rgba(255,255,255,0.35)" font-family="sans-serif">9 legacy systems unified into 1 CRM platform</text>
-        <rect x="14" y="126" width="100" height="3" rx="1.5" fill="rgba(255,255,255,0.08)"/>
-        <rect x="14" y="126" width="89" height="3" rx="1.5" fill="#e67e22" opacity="0.7"/>
-        <text x="117" y="130" font-size="7.5" fill="rgba(255,255,255,0.4)" font-family="sans-serif">89% consolidation</text>
+  <div class="pv4">
+    <div class="pv4-vis" style="background:#0f1a30">
+      <svg width="100%" height="160" viewBox="0 0 280 160">
+        <text x="16" y="22" font-size="9" fill="rgba(255,255,255,0.45)" font-family="sans-serif">Process steps — before vs after</text>
+        <text x="16" y="46" font-size="8.5" fill="rgba(255,255,255,0.4)" font-family="sans-serif">Before</text>
+        <rect x="62" y="34" width="140" height="16" rx="4" fill="#e67e22" opacity="0.3"/>
+        <text x="206" y="46" font-size="9" fill="#e67e22" font-family="sans-serif" font-weight="bold"> 10 steps</text>
+        <text x="16" y="74" font-size="8.5" fill="rgba(255,255,255,0.4)" font-family="sans-serif">After</text>
+        <rect x="62" y="62" width="56" height="16" rx="4" fill="#e67e22" opacity="0.95"/>
+        <text x="122" y="74" font-size="9" fill="rgba(255,255,255,0.85)" font-family="sans-serif" font-weight="bold"> 4 steps</text>
+        <line x1="16" y1="94" x2="264" y2="94" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+        <text x="16" y="116" font-size="26" font-weight="bold" fill="#e67e22" font-family="sans-serif">60%</text>
+        <text x="84" y="110" font-size="10" fill="rgba(255,255,255,0.6)" font-family="sans-serif">fewer steps</text>
+        <text x="84" y="124" font-size="8.5" fill="rgba(255,255,255,0.35)" font-family="sans-serif">3000+ agents · 9 systems → 1 CRM</text>
       </svg>
-      <div class="pv3-vl">CRM Transformation</div>
+      <div class="pv4-vl">CRM Transformation</div>
     </div>
-    <div class="pv3-body">
-      <div class="pv3-cat">Enterprise Platform</div>
-      <div class="pv3-title">CRM 360° Transformation</div>
-      <div class="pv3-role">BA &amp; Implementation Lead</div>
-      <div class="pv3-irow"><div class="pv3-ilbls"><span>Process steps reduced</span><span>10 → 4</span></div><div class="pv3-itrack"><div class="pv3-ifill" style="width:60%"></div></div></div>
-      <div class="pv3-irow"><div class="pv3-ilbls"><span>Systems consolidated</span><span>9 → 1</span></div><div class="pv3-itrack"><div class="pv3-ifill" style="width:89%"></div></div></div>
-      <div class="pv3-tags"><span class="pv3-tag">CRM</span><span class="pv3-tag">MoSCoW</span><span class="pv3-tag">UAT</span><span class="pv3-tag">Data migration</span></div>
-      <button class="pv3-btn" onclick="openModal('modal1')">Case study &rarr;</button>
+    <div class="pv4-body">
+      <div class="pv4-type">Enterprise Platform</div>
+      <div class="pv4-title">CRM 360° Transformation</div>
+      <div class="pv4-role">BA &amp; Implementation Lead</div>
+      <div class="pv4-desc">Consolidated 9 legacy tools into 1 unified CRM for 3000+ agents, cutting process steps from 10 to 4 — a 60% efficiency gain across the entire customer service operation.</div>
+      <button class="pv4-btn" onclick="openModal('modal1')">View Full Case Study →</button>
     </div>
   </div>
 </div>
 
 <!-- Project Card 2 -->
 <div class="col-md-6 col-lg-4">
-  <div class="pv3">
-    <div class="pv3-vis" style="background:#061e38">
-      <svg width="100%" height="152" viewBox="0 0 220 152">
-        <text x="12" y="17" font-size="8.5" fill="rgba(255,255,255,0.5)" font-family="sans-serif">Self-service adoption rate (%)</text>
-        <line x1="24" y1="125" x2="200" y2="125" stroke="rgba(255,255,255,0.12)" stroke-width="0.8"/>
-        <line x1="24" y1="100" x2="200" y2="100" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
-        <line x1="24" y1="75" x2="200" y2="75" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
-        <line x1="24" y1="50" x2="200" y2="50" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
-        <text x="20" y="128" text-anchor="end" font-size="7" fill="rgba(255,255,255,0.3)" font-family="sans-serif">0</text>
-        <text x="20" y="78" text-anchor="end" font-size="7" fill="rgba(255,255,255,0.3)" font-family="sans-serif">50</text>
-        <text x="20" y="28" text-anchor="end" font-size="7" fill="rgba(255,255,255,0.3)" font-family="sans-serif">100</text>
-        <rect x="50" y="56" width="28" height="69" rx="3" fill="#378ADD" opacity="0.5"/>
-        <text x="64" y="52" text-anchor="middle" font-size="9" font-weight="bold" fill="rgba(255,255,255,0.7)" font-family="sans-serif">55%</text>
-        <rect x="110" y="25" width="28" height="100" rx="3" fill="#378ADD" opacity="1"/>
-        <text x="124" y="21" text-anchor="middle" font-size="9" font-weight="bold" fill="#fff" font-family="sans-serif">80%</text>
-        <text x="64" y="139" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.4)" font-family="sans-serif">Before</text>
-        <text x="124" y="139" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.4)" font-family="sans-serif">After</text>
-        <text x="168" y="38" text-anchor="middle" font-size="20" font-weight="bold" fill="#378ADD" font-family="sans-serif">+25</text>
-        <text x="168" y="50" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.5)" font-family="sans-serif">pts gain</text>
-        <text x="168" y="68" text-anchor="middle" font-size="9" font-weight="bold" fill="rgba(255,255,255,0.7)" font-family="sans-serif">80M+</text>
-        <text x="168" y="79" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.4)" font-family="sans-serif">customers</text>
+  <div class="pv4">
+    <div class="pv4-vis" style="background:#061e38">
+      <svg width="100%" height="160" viewBox="0 0 280 160">
+        <text x="16" y="22" font-size="9" fill="rgba(255,255,255,0.45)" font-family="sans-serif">Self-service adoption rate (%)</text>
+        <line x1="30" y1="135" x2="260" y2="135" stroke="rgba(255,255,255,0.12)" stroke-width="0.8"/>
+        <line x1="30" y1="108" x2="260" y2="108" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+        <line x1="30" y1="81" x2="260" y2="81" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+        <line x1="30" y1="54" x2="260" y2="54" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+        <text x="25" y="138" text-anchor="end" font-size="7" fill="rgba(255,255,255,0.3)" font-family="sans-serif">0</text>
+        <text x="25" y="84" text-anchor="end" font-size="7" fill="rgba(255,255,255,0.3)" font-family="sans-serif">50</text>
+        <text x="25" y="30" text-anchor="end" font-size="7" fill="rgba(255,255,255,0.3)" font-family="sans-serif">100</text>
+        <rect x="70" y="75" width="40" height="60" rx="4" fill="#378ADD" opacity="0.5"/>
+        <text x="90" y="70" text-anchor="middle" font-size="10" font-weight="bold" fill="rgba(255,255,255,0.75)" font-family="sans-serif">55%</text>
+        <rect x="150" y="27" width="40" height="108" rx="4" fill="#378ADD" opacity="1"/>
+        <text x="170" y="22" text-anchor="middle" font-size="10" font-weight="bold" fill="#fff" font-family="sans-serif">80%</text>
+        <text x="90" y="150" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.35)" font-family="sans-serif">Before</text>
+        <text x="170" y="150" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.35)" font-family="sans-serif">After</text>
+        <text x="230" y="50" text-anchor="middle" font-size="22" font-weight="bold" fill="#378ADD" font-family="sans-serif">+25</text>
+        <text x="230" y="64" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.45)" font-family="sans-serif">pts gain</text>
+        <text x="230" y="82" text-anchor="middle" font-size="9.5" font-weight="bold" fill="rgba(255,255,255,0.65)" font-family="sans-serif">80M+</text>
+        <text x="230" y="94" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.35)" font-family="sans-serif">customers</text>
       </svg>
-      <div class="pv3-vl">IVR Enhancement</div>
+      <div class="pv4-vl">IVR Enhancement</div>
     </div>
-    <div class="pv3-body">
-      <div class="pv3-cat">Customer Experience</div>
-      <div class="pv3-title">IVR &amp; Self-Service Enhancement</div>
-      <div class="pv3-role">BA &amp; Journey Analyst</div>
-      <div class="pv3-irow"><div class="pv3-ilbls"><span>Self-service adoption</span><span>55% → 80%</span></div><div class="pv3-itrack"><div class="pv3-ifill" style="width:80%"></div></div></div>
-      <div class="pv3-irow"><div class="pv3-ilbls"><span>Services added to IVR</span><span>5+ new</span></div><div class="pv3-itrack"><div class="pv3-ifill" style="width:60%"></div></div></div>
-      <div class="pv3-tags"><span class="pv3-tag">IVR design</span><span class="pv3-tag">Journey mapping</span><span class="pv3-tag">UAT</span></div>
-      <button class="pv3-btn" onclick="openModal('modal2')">Case study &rarr;</button>
+    <div class="pv4-body">
+      <div class="pv4-type">Customer Experience</div>
+      <div class="pv4-title">IVR &amp; Self-Service Enhancement</div>
+      <div class="pv4-role">BA &amp; Journey Analyst</div>
+      <div class="pv4-desc">Redesigned IVR journeys and integrated 5+ key services, lifting self-service adoption from 55% to 80% across Grameenphone's 80M+ customer base — reducing agent call load significantly.</div>
+      <button class="pv4-btn" onclick="openModal('modal2')">View Full Case Study →</button>
     </div>
   </div>
 </div>
 
 <!-- Project Card 3 -->
 <div class="col-md-6 col-lg-4">
-  <div class="pv3">
-    <div class="pv3-vis" style="background:#0a2416">
-      <svg width="100%" height="152" viewBox="0 0 220 152">
-        <text x="12" y="17" font-size="8.5" fill="rgba(255,255,255,0.5)" font-family="sans-serif">Annual cost breakdown</text>
-        <circle cx="80" cy="92" r="44" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="22"/>
-        <circle cx="80" cy="92" r="44" fill="none" stroke="#1D9E75" stroke-width="22" stroke-dasharray="171 276" stroke-dashoffset="-69" stroke-linecap="butt"/>
-        <circle cx="80" cy="92" r="44" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="22" stroke-dasharray="105 276" stroke-dashoffset="-240" stroke-linecap="butt"/>
-        <text x="80" y="88" text-anchor="middle" font-size="18" font-weight="bold" fill="#1D9E75" font-family="sans-serif">62%</text>
-        <text x="80" y="100" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.55)" font-family="sans-serif">cost saved</text>
-        <rect x="147" y="34" width="10" height="10" rx="2" fill="#1D9E75"/>
-        <text x="161" y="43" font-size="8" fill="rgba(255,255,255,0.6)" font-family="sans-serif">Saved ~5M BDT</text>
-        <rect x="147" y="52" width="10" height="10" rx="2" fill="rgba(255,255,255,0.15)"/>
-        <text x="161" y="61" font-size="8" fill="rgba(255,255,255,0.4)" font-family="sans-serif">Remaining ~3M</text>
-        <text x="147" y="82" font-size="9" font-weight="bold" fill="rgba(255,255,255,0.7)" font-family="sans-serif">6 → 1</text>
-        <text x="147" y="93" font-size="7.5" fill="rgba(255,255,255,0.4)" font-family="sans-serif">systems unified</text>
-        <text x="147" y="109" font-size="9" font-weight="bold" fill="rgba(255,255,255,0.7)" font-family="sans-serif">120+</text>
-        <text x="147" y="120" font-size="7.5" fill="rgba(255,255,255,0.4)" font-family="sans-serif">stakeholders</text>
+  <div class="pv4">
+    <div class="pv4-vis" style="background:#0a2416">
+      <svg width="100%" height="160" viewBox="0 0 280 160">
+        <text x="16" y="22" font-size="9" fill="rgba(255,255,255,0.45)" font-family="sans-serif">Annual operating cost saved</text>
+        <circle cx="90" cy="95" r="52" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="26"/>
+        <circle cx="90" cy="95" r="52" fill="none" stroke="#1D9E75" stroke-width="26" stroke-dasharray="203 327" stroke-dashoffset="-82" stroke-linecap="butt"/>
+        <text x="90" y="90" text-anchor="middle" font-size="20" font-weight="bold" fill="#1D9E75" font-family="sans-serif">62%</text>
+        <text x="90" y="104" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.5)" font-family="sans-serif">cost saved</text>
+        <rect x="168" y="36" width="11" height="11" rx="2" fill="#1D9E75"/>
+        <text x="183" y="46" font-size="8.5" fill="rgba(255,255,255,0.55)" font-family="sans-serif">Saved ~5M BDT/yr</text>
+        <rect x="168" y="56" width="11" height="11" rx="2" fill="rgba(255,255,255,0.14)"/>
+        <text x="183" y="66" font-size="8.5" fill="rgba(255,255,255,0.35)" font-family="sans-serif">Remaining ~3M BDT</text>
+        <line x1="168" y1="78" x2="264" y2="78" stroke="rgba(255,255,255,0.07)" stroke-width="0.8"/>
+        <text x="168" y="96" font-size="11" font-weight="bold" fill="rgba(255,255,255,0.7)" font-family="sans-serif">6 → 1</text>
+        <text x="168" y="108" font-size="8" fill="rgba(255,255,255,0.35)" font-family="sans-serif">systems unified</text>
+        <text x="168" y="124" font-size="11" font-weight="bold" fill="rgba(255,255,255,0.7)" font-family="sans-serif">120+</text>
+        <text x="168" y="136" font-size="8" fill="rgba(255,255,255,0.35)" font-family="sans-serif">stakeholders</text>
       </svg>
-      <div class="pv3-vl">Cost Optimisation</div>
+      <div class="pv4-vl">Cost Optimisation</div>
     </div>
-    <div class="pv3-body">
-      <div class="pv3-cat">Cost Optimisation</div>
-      <div class="pv3-title">Single Ticketing &amp; Omnichannel</div>
-      <div class="pv3-role">BA &amp; Requirements Lead</div>
-      <div class="pv3-irow"><div class="pv3-ilbls"><span>Annual cost saving</span><span>≈62%</span></div><div class="pv3-itrack"><div class="pv3-ifill" style="width:62%"></div></div></div>
-      <div class="pv3-irow"><div class="pv3-ilbls"><span>Systems consolidated</span><span>6 → 1</span></div><div class="pv3-itrack"><div class="pv3-ifill" style="width:83%"></div></div></div>
-      <div class="pv3-tags"><span class="pv3-tag">Omnichannel</span><span class="pv3-tag">BRD</span><span class="pv3-tag">Change mgmt</span></div>
-      <button class="pv3-btn" onclick="openModal('modal3')">Case study &rarr;</button>
+    <div class="pv4-body">
+      <div class="pv4-type">Cost Optimisation</div>
+      <div class="pv4-title">Single Ticketing &amp; Omnichannel</div>
+      <div class="pv4-role">BA &amp; Requirements Lead</div>
+      <div class="pv4-desc">Unified 6 fragmented systems into one platform for 120+ stakeholders, saving ~5M BDT annually (62% cost reduction) and enabling centralised service tracking across all channels.</div>
+      <button class="pv4-btn" onclick="openModal('modal3')">View Full Case Study →</button>
     </div>
   </div>
 </div>
 
 <!-- Project Card 4 -->
 <div class="col-md-6 col-lg-4">
-  <div class="pv3">
-    <div class="pv3-vis" style="background:#160a28">
-      <svg width="100%" height="152" viewBox="0 0 220 152">
-        <text x="12" y="17" font-size="8.5" fill="rgba(255,255,255,0.5)" font-family="sans-serif">Key outcomes — RBAC implementation</text>
-        <rect x="12" y="26" width="92" height="50" rx="6" fill="rgba(156,39,176,0.18)" stroke="rgba(156,39,176,0.4)" stroke-width="0.8"/>
-        <text x="58" y="46" text-anchor="middle" font-size="20" font-weight="bold" fill="#ce93d8" font-family="sans-serif">80%</text>
-        <text x="58" y="58" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.5)" font-family="sans-serif">faster provisioning</text>
-        <text x="58" y="68" text-anchor="middle" font-size="7" fill="rgba(255,255,255,0.35)" font-family="sans-serif">5 days → 1 day</text>
-        <rect x="116" y="26" width="92" height="50" rx="6" fill="rgba(29,158,117,0.18)" stroke="rgba(29,158,117,0.4)" stroke-width="0.8"/>
-        <text x="162" y="46" text-anchor="middle" font-size="20" font-weight="bold" fill="#1D9E75" font-family="sans-serif">100%</text>
-        <text x="162" y="58" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.5)" font-family="sans-serif">compliance rate</text>
-        <text x="162" y="68" text-anchor="middle" font-size="7" fill="rgba(255,255,255,0.35)" font-family="sans-serif">audit-ready</text>
-        <rect x="12" y="84" width="92" height="50" rx="6" fill="rgba(239,159,39,0.15)" stroke="rgba(239,159,39,0.35)" stroke-width="0.8"/>
-        <text x="58" y="104" text-anchor="middle" font-size="20" font-weight="bold" fill="#EF9F27" font-family="sans-serif">3000+</text>
-        <text x="58" y="116" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.5)" font-family="sans-serif">users governed</text>
-        <text x="58" y="126" text-anchor="middle" font-size="7" fill="rgba(255,255,255,0.35)" font-family="sans-serif">role-based access</text>
-        <rect x="116" y="84" width="92" height="50" rx="6" fill="rgba(239,83,80,0.15)" stroke="rgba(239,83,80,0.3)" stroke-width="0.8"/>
-        <text x="162" y="104" text-anchor="middle" font-size="20" font-weight="bold" fill="#ef5350" font-family="sans-serif">0</text>
-        <text x="162" y="116" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.5)" font-family="sans-serif">security incidents</text>
-        <text x="162" y="126" text-anchor="middle" font-size="7" fill="rgba(255,255,255,0.35)" font-family="sans-serif">post-implementation</text>
+  <div class="pv4">
+    <div class="pv4-vis" style="background:#160a28">
+      <svg width="100%" height="160" viewBox="0 0 280 160">
+        <text x="16" y="22" font-size="9" fill="rgba(255,255,255,0.45)" font-family="sans-serif">RBAC implementation outcomes</text>
+        <rect x="16" y="30" width="112" height="56" rx="7" fill="rgba(156,39,176,0.15)" stroke="rgba(156,39,176,0.35)" stroke-width="0.8"/>
+        <text x="72" y="54" text-anchor="middle" font-size="22" font-weight="bold" fill="#ce93d8" font-family="sans-serif">80%</text>
+        <text x="72" y="67" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.45)" font-family="sans-serif">faster provisioning</text>
+        <text x="72" y="78" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.28)" font-family="sans-serif">5 days → 1 day</text>
+        <rect x="152" y="30" width="112" height="56" rx="7" fill="rgba(29,158,117,0.15)" stroke="rgba(29,158,117,0.35)" stroke-width="0.8"/>
+        <text x="208" y="54" text-anchor="middle" font-size="22" font-weight="bold" fill="#1D9E75" font-family="sans-serif">100%</text>
+        <text x="208" y="67" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.45)" font-family="sans-serif">compliance rate</text>
+        <text x="208" y="78" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.28)" font-family="sans-serif">fully audit-ready</text>
+        <rect x="16" y="96" width="112" height="54" rx="7" fill="rgba(239,159,39,0.13)" stroke="rgba(239,159,39,0.32)" stroke-width="0.8"/>
+        <text x="72" y="118" text-anchor="middle" font-size="20" font-weight="bold" fill="#EF9F27" font-family="sans-serif">3000+</text>
+        <text x="72" y="131" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.45)" font-family="sans-serif">users governed</text>
+        <text x="72" y="142" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.28)" font-family="sans-serif">role-based access</text>
+        <rect x="152" y="96" width="112" height="54" rx="7" fill="rgba(239,83,80,0.13)" stroke="rgba(239,83,80,0.28)" stroke-width="0.8"/>
+        <text x="208" y="118" text-anchor="middle" font-size="22" font-weight="bold" fill="#ef5350" font-family="sans-serif">0</text>
+        <text x="208" y="131" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.45)" font-family="sans-serif">security incidents</text>
+        <text x="208" y="142" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.28)" font-family="sans-serif">post-implementation</text>
       </svg>
-      <div class="pv3-vl">Security &amp; Access</div>
+      <div class="pv4-vl">Security &amp; Access</div>
     </div>
-    <div class="pv3-body">
-      <div class="pv3-cat">Security &amp; Compliance</div>
-      <div class="pv3-title">Role-Based Access Control (RBAC)</div>
-      <div class="pv3-role">BA &amp; Security Analyst</div>
-      <div class="pv3-irow"><div class="pv3-ilbls"><span>Provisioning time reduced</span><span>5 days → 1 day</span></div><div class="pv3-itrack"><div class="pv3-ifill" style="width:80%"></div></div></div>
-      <div class="pv3-irow"><div class="pv3-ilbls"><span>Compliance rate</span><span>100%</span></div><div class="pv3-itrack"><div class="pv3-ifill" style="width:100%"></div></div></div>
-      <div class="pv3-tags"><span class="pv3-tag">RBAC</span><span class="pv3-tag">Security audit</span><span class="pv3-tag">Stakeholder alignment</span></div>
-      <button class="pv3-btn" onclick="openModal('modal4')">Case study &rarr;</button>
+    <div class="pv4-body">
+      <div class="pv4-type">Security &amp; Compliance</div>
+      <div class="pv4-title">Role-Based Access Control (RBAC)</div>
+      <div class="pv4-role">BA &amp; Security Analyst</div>
+      <div class="pv4-desc">Designed and implemented RBAC for 3000+ users, cutting access provisioning from 5 days to 1 day, achieving 100% audit compliance and zero unauthorized access incidents post-launch.</div>
+      <button class="pv4-btn" onclick="openModal('modal4')">View Full Case Study →</button>
     </div>
   </div>
 </div>
 
 <!-- Project Card 5 -->
 <div class="col-md-6 col-lg-4">
-  <div class="pv3">
-    <div class="pv3-vis" style="background:#200808">
-      <svg width="100%" height="152" viewBox="0 0 220 152">
-        <text x="12" y="17" font-size="8.5" fill="rgba(255,255,255,0.5)" font-family="sans-serif">System incidents per year ↓ falling</text>
-        <line x1="28" y1="126" x2="205" y2="126" stroke="rgba(255,255,255,0.12)" stroke-width="0.8"/>
-        <line x1="28" y1="126" x2="28" y2="28" stroke="rgba(255,255,255,0.12)" stroke-width="0.8"/>
-        <line x1="28" y1="90" x2="205" y2="90" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
-        <line x1="28" y1="60" x2="205" y2="60" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
-        <text x="23" y="40" text-anchor="end" font-size="7" fill="rgba(255,255,255,0.35)" font-family="sans-serif">82</text>
-        <text x="23" y="93" text-anchor="end" font-size="7" fill="rgba(255,255,255,0.35)" font-family="sans-serif">49</text>
-        <text x="23" y="120" text-anchor="end" font-size="7" fill="rgba(255,255,255,0.35)" font-family="sans-serif">41</text>
-        <polyline points="60,38 120,88 180,118" fill="none" stroke="#ef5350" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <polygon points="60,38 28,38 28,126 180,126 180,118 120,88" fill="#ef5350" opacity="0.07"/>
-        <circle cx="60" cy="38" r="4" fill="#ef5350"/>
-        <circle cx="120" cy="88" r="4" fill="#ef5350"/>
-        <circle cx="180" cy="118" r="4.5" fill="#ef5350" stroke="#fff" stroke-width="1.5"/>
-        <text x="60" y="32" text-anchor="middle" font-size="8" font-weight="bold" fill="rgba(255,255,255,0.7)" font-family="sans-serif">82</text>
-        <text x="120" y="82" text-anchor="middle" font-size="8" font-weight="bold" fill="rgba(255,255,255,0.7)" font-family="sans-serif">49</text>
-        <text x="180" y="112" text-anchor="middle" font-size="8" font-weight="bold" fill="#fff" font-family="sans-serif">41</text>
-        <text x="60" y="140" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.4)" font-family="sans-serif">2019</text>
-        <text x="120" y="140" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.4)" font-family="sans-serif">2020</text>
-        <text x="180" y="140" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.4)" font-family="sans-serif">2021</text>
-        <text x="205" y="38" text-anchor="end" font-size="14" font-weight="bold" fill="#ef5350" font-family="sans-serif">−50%</text>
-        <text x="205" y="50" text-anchor="end" font-size="7.5" fill="rgba(255,255,255,0.45)" font-family="sans-serif">incidents</text>
+  <div class="pv4">
+    <div class="pv4-vis" style="background:#200808">
+      <svg width="100%" height="160" viewBox="0 0 280 160">
+        <text x="16" y="22" font-size="9" fill="rgba(255,255,255,0.45)" font-family="sans-serif">System incidents/year  ↓  falling</text>
+        <line x1="36" y1="135" x2="255" y2="135" stroke="rgba(255,255,255,0.12)" stroke-width="0.8"/>
+        <line x1="36" y1="135" x2="36" y2="34" stroke="rgba(255,255,255,0.12)" stroke-width="0.8"/>
+        <line x1="36" y1="100" x2="255" y2="100" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+        <line x1="36" y1="67" x2="255" y2="67" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+        <text x="30" y="44" text-anchor="end" font-size="7.5" fill="rgba(255,255,255,0.35)" font-family="sans-serif">82</text>
+        <text x="30" y="104" text-anchor="end" font-size="7.5" fill="rgba(255,255,255,0.35)" font-family="sans-serif">49</text>
+        <text x="30" y="130" text-anchor="end" font-size="7.5" fill="rgba(255,255,255,0.35)" font-family="sans-serif">41</text>
+        <polyline points="80,40 160,98 240,128" fill="none" stroke="#ef5350" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <polygon points="80,40 36,40 36,135 240,135 240,128 160,98" fill="#ef5350" opacity="0.06"/>
+        <circle cx="80" cy="40" r="5" fill="#ef5350"/>
+        <circle cx="160" cy="98" r="5" fill="#ef5350"/>
+        <circle cx="240" cy="128" r="5.5" fill="#ef5350" stroke="#fff" stroke-width="1.5"/>
+        <text x="80" y="34" text-anchor="middle" font-size="8.5" font-weight="bold" fill="rgba(255,255,255,0.7)" font-family="sans-serif">82</text>
+        <text x="160" y="92" text-anchor="middle" font-size="8.5" font-weight="bold" fill="rgba(255,255,255,0.7)" font-family="sans-serif">49</text>
+        <text x="240" y="122" text-anchor="middle" font-size="8.5" font-weight="bold" fill="#fff" font-family="sans-serif">41</text>
+        <text x="80" y="150" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.35)" font-family="sans-serif">2019</text>
+        <text x="160" y="150" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.35)" font-family="sans-serif">2020</text>
+        <text x="240" y="150" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.35)" font-family="sans-serif">2021</text>
       </svg>
-      <div class="pv3-vl">Incident Reduction</div>
+      <div class="pv4-vl">Incident Reduction</div>
     </div>
-    <div class="pv3-body">
-      <div class="pv3-cat">Operational Reliability</div>
-      <div class="pv3-title">System Incident Reduction Programme</div>
-      <div class="pv3-role">BA &amp; Programme Lead</div>
-      <div class="pv3-irow"><div class="pv3-ilbls"><span>Annual incidents</span><span>82 → 41 (−50%)</span></div><div class="pv3-itrack"><div class="pv3-ifill" style="width:50%"></div></div></div>
-      <div class="pv3-irow"><div class="pv3-ilbls"><span>Monthly downtime</span><span>9h → 3h (−67%)</span></div><div class="pv3-itrack"><div class="pv3-ifill" style="width:67%"></div></div></div>
-      <div class="pv3-tags"><span class="pv3-tag">SLA management</span><span class="pv3-tag">Root cause analysis</span><span class="pv3-tag">Vendor mgmt</span></div>
-      <button class="pv3-btn" onclick="openModal('modal5')">Case study &rarr;</button>
+    <div class="pv4-body">
+      <div class="pv4-type">Operational Reliability</div>
+      <div class="pv4-title">System Incident Reduction Programme</div>
+      <div class="pv4-role">BA &amp; Programme Lead</div>
+      <div class="pv4-desc">Reduced system incidents from 82 to 41 over two years (−50%) through vendor coordination, root cause analysis, and escalation frameworks — cutting monthly downtime from 9h to 3h.</div>
+      <button class="pv4-btn" onclick="openModal('modal5')">View Full Case Study →</button>
     </div>
   </div>
 </div>
 
 <!-- Project Card 6 -->
 <div class="col-md-6 col-lg-4">
-  <div class="pv3">
-    <div class="pv3-vis" style="background:#1a1000">
-      <svg width="100%" height="152" viewBox="0 0 220 152">
-        <text x="12" y="17" font-size="8.5" fill="rgba(255,255,255,0.5)" font-family="sans-serif">Query handling time — seconds</text>
-        <path d="M 55 118 A 50 50 0 0 1 155 118" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="16" stroke-linecap="round"/>
-        <path d="M 55 118 A 50 50 0 0 1 155 118" fill="none" stroke="#ffb300" stroke-width="16" stroke-linecap="round" stroke-dasharray="110 157" stroke-dashoffset="0"/>
-        <line x1="105" y1="118" x2="105" y2="78" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(-15 105 118)"/>
-        <circle cx="105" cy="118" r="5" fill="#ffb300"/>
-        <text x="105" y="110" text-anchor="middle" font-size="18" font-weight="bold" fill="#ffb300" font-family="sans-serif">50s</text>
-        <text x="105" y="122" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.5)" font-family="sans-serif">after</text>
-        <text x="52" y="132" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.4)" font-family="sans-serif">60s</text>
-        <text x="158" y="132" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.4)" font-family="sans-serif">0s</text>
-        <rect x="148" y="28" width="62" height="26" rx="5" fill="rgba(255,179,0,0.15)" stroke="rgba(255,179,0,0.3)" stroke-width="0.8"/>
-        <text x="179" y="40" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffb300" font-family="sans-serif">17%</text>
-        <text x="179" y="50" text-anchor="middle" font-size="7" fill="rgba(255,255,255,0.45)" font-family="sans-serif">time saved</text>
-        <text x="148" y="72" font-size="8" fill="rgba(255,255,255,0.5)" font-family="sans-serif">3000 agents</text>
-        <text x="148" y="83" font-size="7.5" fill="rgba(255,255,255,0.35)" font-family="sans-serif">every query</text>
-        <text x="148" y="97" font-size="8" fill="rgba(255,255,255,0.5)" font-family="sans-serif">0 defects</text>
-        <text x="148" y="108" font-size="7.5" fill="rgba(255,255,255,0.35)" font-family="sans-serif">post-release</text>
+  <div class="pv4">
+    <div class="pv4-vis" style="background:#1a1000">
+      <svg width="100%" height="160" viewBox="0 0 280 160">
+        <text x="16" y="22" font-size="9" fill="rgba(255,255,255,0.45)" font-family="sans-serif">Query handling time (seconds)</text>
+        <path d="M 80 130 A 62 62 0 0 1 196 130" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="18" stroke-linecap="round"/>
+        <path d="M 80 130 A 62 62 0 0 1 196 130" fill="none" stroke="#ffb300" stroke-width="18" stroke-linecap="round" stroke-dasharray="135 195" stroke-dashoffset="0"/>
+        <line x1="138" y1="130" x2="138" y2="82" stroke="#fff" stroke-width="2.5" stroke-linecap="round" transform="rotate(-14 138 130)"/>
+        <circle cx="138" cy="130" r="6" fill="#ffb300"/>
+        <text x="138" y="122" text-anchor="middle" font-size="20" font-weight="bold" fill="#ffb300" font-family="sans-serif">50s</text>
+        <text x="138" y="136" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.45)" font-family="sans-serif">after</text>
+        <text x="76" y="148" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.35)" font-family="sans-serif">60s</text>
+        <text x="200" y="148" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.35)" font-family="sans-serif">0s</text>
+        <rect x="210" y="32" width="56" height="30" rx="6" fill="rgba(255,179,0,0.14)" stroke="rgba(255,179,0,0.3)" stroke-width="0.8"/>
+        <text x="238" y="50" text-anchor="middle" font-size="16" font-weight="bold" fill="#ffb300" font-family="sans-serif">17%</text>
+        <text x="238" y="61" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.4)" font-family="sans-serif">faster</text>
+        <text x="210" y="82" font-size="8.5" fill="rgba(255,255,255,0.5)" font-family="sans-serif">3000 agents</text>
+        <text x="210" y="96" font-size="8" fill="rgba(255,255,255,0.3)" font-family="sans-serif">every single query</text>
+        <text x="210" y="114" font-size="8.5" fill="rgba(255,255,255,0.5)" font-family="sans-serif">0 defects</text>
+        <text x="210" y="128" font-size="8" fill="rgba(255,255,255,0.3)" font-family="sans-serif">post-release</text>
       </svg>
-      <div class="pv3-vl">Process Efficiency</div>
+      <div class="pv4-vl">Process Efficiency</div>
     </div>
-    <div class="pv3-body">
-      <div class="pv3-cat">Process Efficiency</div>
-      <div class="pv3-title">Charging Inquiry Tool (CIT) Optimization</div>
-      <div class="pv3-role">BA &amp; UI Optimisation Lead</div>
-      <div class="pv3-irow"><div class="pv3-ilbls"><span>Handling time per query</span><span>60s → 50s (−17%)</span></div><div class="pv3-itrack"><div class="pv3-ifill" style="width:17%"></div></div></div>
-      <div class="pv3-irow"><div class="pv3-ilbls"><span>Agent productivity gain</span><span>+15%</span></div><div class="pv3-itrack"><div class="pv3-ifill" style="width:15%"></div></div></div>
-      <div class="pv3-tags"><span class="pv3-tag">UI optimisation</span><span class="pv3-tag">Process redesign</span><span class="pv3-tag">Call centre</span></div>
-      <button class="pv3-btn" onclick="openModal('modal6')">Case study &rarr;</button>
+    <div class="pv4-body">
+      <div class="pv4-type">Process Efficiency</div>
+      <div class="pv4-title">Charging Inquiry Tool (CIT) Optimization</div>
+      <div class="pv4-role">BA &amp; UI Optimisation Lead</div>
+      <div class="pv4-desc">Simplified the billing tool UI and workflows for 3000 call-centre agents, reducing query handling time from 60s to 50s (17% gain) with zero defects reported post-release.</div>
+      <button class="pv4-btn" onclick="openModal('modal6')">View Full Case Study →</button>
     </div>
   </div>
 </div>
