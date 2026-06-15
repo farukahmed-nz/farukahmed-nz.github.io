@@ -92,18 +92,22 @@
 
             <h2 style="font-weight:900;font-size:clamp(54px,7vw,82px);line-height:1;letter-spacing:-2px;margin-bottom:8px;color:#1a2340;">Faruk <span style="color:#e67e22;">Ahmed</span></h2>
 
-            <!-- Location A — under name -->
-            <div style="display:inline-flex;align-items:center;gap:6px;margin-bottom:14px;font-size:12px;color:#666;">
-              <i class="bi bi-geo-alt-fill" style="color:#e67e22;font-size:13px;"></i>
-              Auckland, New Zealand
-              <span style="width:7px;height:7px;background:#22c55e;border-radius:50%;margin-left:4px;display:inline-block;"></span>
-              <span style="font-size:11px;color:#22c55e;font-weight:700;">Open to Opportunity</span>
+            <!-- Location — pill badges under name -->
+            <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px;">
+              <span style="display:inline-flex;align-items:center;gap:5px;font-size:12px;color:#555;background:#f7f7f7;border:1px solid #e0e0e0;border-radius:20px;padding:4px 14px;">
+                <i class="bi bi-geo-alt-fill" style="color:#e67e22;font-size:13px;"></i>
+                Auckland, New Zealand
+              </span>
+              <span style="display:inline-flex;align-items:center;gap:6px;font-size:12px;color:#16a34a;font-weight:700;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:20px;padding:4px 14px;">
+                <span style="width:8px;height:8px;background:#22c55e;border-radius:50%;display:inline-block;"></span>
+                Open to Opportunity
+              </span>
             </div>
 
             <h3 style="font-weight:700;font-size:clamp(14px,1.8vw,17px);color:#1a2340;line-height:1.55;margin-bottom:26px;">Business Analyst specialising in <span style="color:#e67e22;">Digital Transformation</span>, <span style="color:#e67e22;">Customer Experience</span> &amp; <span style="color:#e67e22;">Agile Delivery.</span></h3>
 
             <!-- CTA Buttons -->
-            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300" style="display:flex;gap:14px;justify-content:flex-start;margin-bottom:26px;">
+            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300" style="display:flex;gap:14px;justify-content:center;margin-bottom:26px;">
               <a href="#projects" class="btn btn-primary" style="display:inline-flex;align-items:center;gap:8px;border-radius:25px;padding:11px 28px;font-size:14px;">
                 <i class="bi bi-briefcase-fill"></i> View My Projects
               </a>
@@ -116,18 +120,17 @@
             <p style="font-size:10px;font-weight:700;color:#bbb;letter-spacing:1.4px;text-transform:uppercase;margin-bottom:9px;">Professional Capabilities</p>
             <style>
               .cap-grid-a{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-bottom:14px;}
-              .cap-tile{border-radius:10px;padding:10px 8px;text-align:center;}
-              .cap-tile i{font-size:20px;display:block;margin-bottom:5px;}
-              .cap-tile span{font-size:10.5px;font-weight:600;color:#1a2340;line-height:1.3;}
+              .cap-tile{border-radius:10px;padding:14px 8px;text-align:center;display:flex;align-items:center;justify-content:center;min-height:58px;}
+              .cap-tile span{font-size:13px;font-weight:700;line-height:1.3;}
               @media(max-width:767px){.cap-grid-a{grid-template-columns:repeat(2,1fr);}}
             </style>
             <div class="cap-grid-a" data-aos="fade-up" data-aos-delay="350">
-              <div class="cap-tile" style="background:#fff3e8;"><i class="bi bi-building" style="color:#e67e22;"></i><span>Enterprise Transformation</span></div>
-              <div class="cap-tile" style="background:#f5f0ff;"><i class="bi bi-people" style="color:#9333ea;"></i><span>Stakeholder Management</span></div>
-              <div class="cap-tile" style="background:#f0fdf4;"><i class="bi bi-cpu" style="color:#047857;"></i><span>AI Enthusiast</span></div>
-              <div class="cap-tile" style="background:#fff8ed;"><i class="bi bi-gear" style="color:#b45309;"></i><span>Process Optimisation</span></div>
-              <div class="cap-tile" style="background:#e8f4ff;"><i class="bi bi-display" style="color:#0369a1;"></i><span>Platform Delivery</span></div>
-              <div class="cap-tile" style="background:#fdf0f8;"><i class="bi bi-diagram-3" style="color:#db2777;"></i><span>Cross-Functional Leadership</span></div>
+              <div class="cap-tile" style="background:#f97316;"><span style="color:#fff;">Enterprise Transformation</span></div>
+              <div class="cap-tile" style="background:#7c3aed;"><span style="color:#fff;">Stakeholder Management</span></div>
+              <div class="cap-tile" style="background:#047857;"><span style="color:#fff;">AI Enthusiast</span></div>
+              <div class="cap-tile" style="background:#b45309;"><span style="color:#fff;">Process Optimisation</span></div>
+              <div class="cap-tile" style="background:#0369a1;"><span style="color:#fff;">Platform Delivery</span></div>
+              <div class="cap-tile" style="background:#be185d;"><span style="color:#fff;">Cross-Functional Leadership</span></div>
             </div>
 
             <!-- Divider -->
@@ -136,52 +139,42 @@
             <!-- Ring B stats — 3 only, one row -->
             <p style="font-size:10px;font-weight:700;color:#bbb;letter-spacing:1.4px;text-transform:uppercase;margin-bottom:12px;">Career at a Glance</p>
             <style>
-              @keyframes ringFill{from{stroke-dashoffset:100}to{stroke-dashoffset:var(--ro)}}
               .ring-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:4px;}
               .ring-card{text-align:center;}
-              .ring-card svg circle.fill{animation:ringFill 1.1s ease 0.5s both;}
               .ring-num{font-size:17px;font-weight:900;color:#1a2340;line-height:1;margin-top:5px;}
               .ring-lbl{font-size:9.5px;color:#888;line-height:1.35;margin-top:2px;}
+              .ring-track{fill:none;stroke-width:5;}
+              .ring-fill{fill:none;stroke-width:5;stroke-linecap:round;transform-origin:50% 50%;transform:rotate(-90deg);transition:stroke-dasharray 0s;}
+              @keyframes ringAnim{from{stroke-dasharray:0 119.4}to{stroke-dasharray:var(--dash) 119.4}}
+              .ring-fill{animation:ringAnim 1.2s ease forwards;}
             </style>
             <div class="ring-row" data-aos="fade-up" data-aos-delay="400">
 
+              <!-- 14+ yrs = 14/20 = 70% of full circle. Circumference of r=19: 2*π*19 ≈ 119.4. 70% = 83.6 -->
               <div class="ring-card">
-                <svg width="72" height="72" viewBox="0 0 44 44" aria-label="14 plus years industry experience">
-                  <circle cx="22" cy="22" r="19" fill="none" stroke="#fff3e8" stroke-width="5"/>
-                  <circle cx="22" cy="22" r="19" fill="none" stroke="#e67e22" stroke-width="5"
-                    stroke-dasharray="90 100" stroke-dashoffset="25"
-                    stroke-linecap="round" transform="rotate(-90 22 22)"
-                    class="fill" style="--ro:25;stroke-dasharray:0 100;animation:ringFill 1.1s ease 0.4s forwards;"/>
-                  <text x="22" y="18" text-anchor="middle" font-size="8.5" font-weight="900" fill="#1a2340" font-family="sans-serif">14+</text>
-                  <text x="22" y="28" text-anchor="middle" font-size="5" fill="#888" font-family="sans-serif">yrs total</text>
+                <svg width="80" height="80" viewBox="0 0 44 44">
+                  <circle class="ring-track" cx="22" cy="22" r="19" stroke="#ffe4cc"/>
+                  <circle class="ring-fill" cx="22" cy="22" r="19" stroke="#e67e22" style="--dash:83.6;animation-delay:0.3s;stroke-dasharray:0 119.4"/>
                 </svg>
                 <div class="ring-num">14+</div>
                 <div class="ring-lbl">Years Industry<br>Experience</div>
               </div>
 
+              <!-- 7+ yrs = 7/20 = 35% of full circle. 35% of 119.4 = 41.8 -->
               <div class="ring-card">
-                <svg width="72" height="72" viewBox="0 0 44 44" aria-label="7 plus years BA experience">
-                  <circle cx="22" cy="22" r="19" fill="none" stroke="#f5f0ff" stroke-width="5"/>
-                  <circle cx="22" cy="22" r="19" fill="none" stroke="#9333ea" stroke-width="5"
-                    stroke-dasharray="50 100" stroke-dashoffset="25"
-                    stroke-linecap="round" transform="rotate(-90 22 22)"
-                    class="fill" style="--ro:25;stroke-dasharray:0 100;animation:ringFill 1.1s ease 0.55s forwards;"/>
-                  <text x="22" y="18" text-anchor="middle" font-size="8.5" font-weight="900" fill="#1a2340" font-family="sans-serif">7+</text>
-                  <text x="22" y="28" text-anchor="middle" font-size="5" fill="#888" font-family="sans-serif">yrs BA</text>
+                <svg width="80" height="80" viewBox="0 0 44 44">
+                  <circle class="ring-track" cx="22" cy="22" r="19" stroke="#e8d5ff"/>
+                  <circle class="ring-fill" cx="22" cy="22" r="19" stroke="#9333ea" style="--dash:41.8;animation-delay:0.5s;stroke-dasharray:0 119.4"/>
                 </svg>
                 <div class="ring-num">7+</div>
                 <div class="ring-lbl">Years BA<br>Experience</div>
               </div>
 
+              <!-- 15+ projects = 15/20 = 75% of full circle. 75% of 119.4 = 89.6 -->
               <div class="ring-card">
-                <svg width="72" height="72" viewBox="0 0 44 44" aria-label="15 plus transformation initiatives">
-                  <circle cx="22" cy="22" r="19" fill="none" stroke="#f0fdf4" stroke-width="5"/>
-                  <circle cx="22" cy="22" r="19" fill="none" stroke="#0d9488" stroke-width="5"
-                    stroke-dasharray="75 100" stroke-dashoffset="25"
-                    stroke-linecap="round" transform="rotate(-90 22 22)"
-                    class="fill" style="--ro:25;stroke-dasharray:0 100;animation:ringFill 1.1s ease 0.7s forwards;"/>
-                  <text x="22" y="18" text-anchor="middle" font-size="8.5" font-weight="900" fill="#1a2340" font-family="sans-serif">15+</text>
-                  <text x="22" y="28" text-anchor="middle" font-size="5" fill="#888" font-family="sans-serif">projects</text>
+                <svg width="80" height="80" viewBox="0 0 44 44">
+                  <circle class="ring-track" cx="22" cy="22" r="19" stroke="#ccf0ec"/>
+                  <circle class="ring-fill" cx="22" cy="22" r="19" stroke="#0d9488" style="--dash:89.6;animation-delay:0.7s;stroke-dasharray:0 119.4"/>
                 </svg>
                 <div class="ring-num">15+</div>
                 <div class="ring-lbl">Transformation<br>Initiatives Delivered</div>
@@ -607,6 +600,7 @@
 @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
 @keyframes barGrow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
 @keyframes lineIn{from{stroke-dashoffset:400}to{stroke-dashoffset:0}}
+@keyframes gaugeIn{from{stroke-dasharray:0 172.8}to{stroke-dasharray:var(--dashend) 172.8}}
 @keyframes donutIn{from{stroke-dasharray:0 377}to{stroke-dasharray:219 377}}
 @keyframes numPop{0%{opacity:0;transform:scale(0.75)}60%{transform:scale(1.06)}100%{opacity:1;transform:scale(1)}}
 @keyframes ringLoad{from{stroke-dashoffset:100}to{stroke-dashoffset:var(--ro)}}
@@ -635,14 +629,16 @@
 .pv6-btn{display:block;text-align:center;font-size:13.5px;font-weight:700;color:#fff;background:#e67e22;border:none;border-radius:25px;padding:10px 0;cursor:pointer;width:100%;letter-spacing:0.2px;transition:background 0.2s}
 .pv6-btn:hover{background:#c9691a}
 
-/* bar: use transform-origin so scaleX works from left */
-.anim-bar{transform-origin:left center;animation:barGrow 0.9s cubic-bezier(0.4,0,0.2,1) 0.6s both}
-/* line chart draw */
-.anim-line{stroke-dasharray:400;stroke-dashoffset:400;animation:lineIn 1.2s ease 0.7s forwards}
-/* donut fill */
-.anim-donut{stroke-dasharray:0 377;animation:donutIn 1.1s ease 0.7s forwards}
-/* number pop */
-.anim-num{opacity:0;animation:numPop 0.6s ease 0.9s forwards}
+/* bar, line, donut, num — start paused; JS adds .anim-active to trigger them */
+.anim-bar{transform-origin:left center;transform:scaleX(0);}
+.anim-bar.anim-active{animation:barGrow 0.9s cubic-bezier(0.4,0,0.2,1) 0.2s both}
+.anim-line{stroke-dasharray:400;stroke-dashoffset:400;}
+.anim-line.anim-active{animation:lineIn 1.2s ease 0.3s forwards}
+.anim-line[style*="--dashend"].anim-active{animation:gaugeIn 1.2s ease 0.3s forwards;stroke-dashoffset:0;}
+.anim-donut{stroke-dasharray:0 377;}
+.anim-donut.anim-active{animation:donutIn 1.1s ease 0.3s forwards}
+.anim-num{opacity:0;}
+.anim-num.anim-active{animation:numPop 0.6s ease 0.5s forwards}
 </style>
 
 <!-- Project Card 1 -->
@@ -851,61 +847,50 @@
     <div class="pv6-vis pv6-v6">
       <svg style="position:absolute;inset:0;width:100%;height:100%" viewBox="0 0 360 190" preserveAspectRatio="xMidYMid meet">
         <defs><filter id="ds6"><feDropShadow dx="0" dy="1" stdDeviation="2.5" flood-color="rgba(0,0,0,0.35)"/></filter></defs>
-        <text x="20" y="24" font-size="10.5" fill="rgba(255,255,255,0.9)" font-family="sans-serif" font-weight="600">Query handling time (seconds)</text>
+        <text x="180" y="18" text-anchor="middle" font-size="10.5" fill="rgba(255,255,255,0.9)" font-family="sans-serif" font-weight="600">Query handling time (seconds)</text>
 
-        <!--
-          Gauge explanation:
-          Arc centre = (168, 170). Radius = 90.
-          Arc goes from left (60s) to right (0s) — a 180-degree semicircle.
-          Left end point:  168-90 = 78,  y=170  → (78, 170)
-          Right end point: 168+90 = 258, y=170  → (258, 170)
-          Full arc circumference (half circle) = π×90 ≈ 283.
-
-          50s out of 60s scale = 50/60 = 83% of the way from LEFT (60s) to RIGHT (0s).
-          Filled portion = 0.83 × 283 ≈ 235.
-          Needle angle: starts at -90deg (pointing straight up = left end).
-          50s/60s = 83% → rotate by 0.83×180 = 150deg from -90 → final = +60deg from vertical.
-          rotate(60 168 170) means needle leans right, correctly showing "almost at 0s end".
-          But 50s is NOT close to 0s — it's 83% of a 60s scale.
-          Corrected: 50s on a 0-60s scale where LEFT=60s and RIGHT=0s:
-          position from left = (60-50)/60 = 10/60 = 17% from left end.
-          Filled (from left) = 0.17 × 283 ≈ 48.
-          Needle rotation from left = 0.17 × 180 = 30deg → rotate(-90+30) = rotate(-60 168 170).
-        -->
-
-        <!-- Track (full arc, dim) -->
-        <path d="M 78 170 A 90 90 0 0 1 258 170"
-          fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="20" stroke-linecap="round"/>
-
-        <!-- Filled arc: 60s end (left) down to 50s — 17% of arc = 48px of 283 total -->
-        <path d="M 78 170 A 90 90 0 0 1 258 170"
-          fill="none" stroke="rgba(255,255,255,0.88)" stroke-width="20" stroke-linecap="round"
-          stroke-dasharray="48 283" class="anim-line" style="stroke-dasharray:0 283;animation-name:lineIn;--dashend:48"/>
-
+        <!-- LEFT GAUGE: BEFORE = 60s (needle at far left = 60s end, -90deg) -->
+        <!-- Gauge centre: (88, 130). Radius 55. Arc: M 33 130 A 55 55 0 0 1 143 130 -->
+        <text x="88" y="42" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.6)" font-family="sans-serif">BEFORE</text>
+        <!-- Track -->
+        <path d="M 33 130 A 55 55 0 0 1 143 130" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="14" stroke-linecap="round"/>
+        <!-- Full arc filled (100% = 60s = left end). dasharray = π*55 ≈ 172.8 -->
+        <path d="M 33 130 A 55 55 0 0 1 143 130" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="14" stroke-linecap="round"
+          stroke-dasharray="0 172.8" class="anim-line" style="--dashend:172.8"/>
         <!-- Scale labels -->
-        <text x="72" y="183" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.65)" font-family="sans-serif">60s</text>
-        <text x="168" y="90" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)" font-family="sans-serif">30s</text>
-        <text x="264" y="183" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.65)" font-family="sans-serif">0s</text>
-
-        <!-- Needle: pivot at (168,170). 50s = 17% from left = 30deg from left end.
-             Left end is at -90deg from vertical, so needle angle = -90+30 = -60deg -->
-        <line x1="168" y1="170" x2="168" y2="90"
-          stroke="#fff" stroke-width="3" stroke-linecap="round"
-          transform="rotate(-60 168 170)" filter="url(#ds6)"/>
-        <circle cx="168" cy="170" r="7" fill="#fff" filter="url(#ds6)"/>
-
+        <text x="26" y="143" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.55)" font-family="sans-serif">60s</text>
+        <text x="88" y="80" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.35)" font-family="sans-serif">30s</text>
+        <text x="150" y="143" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.55)" font-family="sans-serif">0s</text>
+        <!-- Needle: 60s = 0% from left = stays at -90deg from vertical -->
+        <line x1="88" y1="130" x2="88" y2="75" stroke="#fff" stroke-width="2.5" stroke-linecap="round" transform="rotate(-90 88 130)" filter="url(#ds6)"/>
+        <circle cx="88" cy="130" r="5" fill="#fff" filter="url(#ds6)"/>
         <!-- Reading -->
-        <text x="168" y="148" text-anchor="middle" font-size="26" font-weight="800" fill="#fff" font-family="sans-serif" filter="url(#ds6)" class="anim-num">50s</text>
-        <text x="168" y="163" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.75)" font-family="sans-serif">current · was 60s</text>
+        <text x="88" y="118" text-anchor="middle" font-size="22" font-weight="800" fill="#fff" font-family="sans-serif" filter="url(#ds6)" class="anim-num">60s</text>
 
-        <!-- Right panel stats -->
-        <rect x="258" y="32" width="88" height="42" rx="7" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.35)" stroke-width="0.8"/>
-        <text x="302" y="55" text-anchor="middle" font-size="20" font-weight="800" fill="#fff" font-family="sans-serif" filter="url(#ds6)" class="anim-num">17%</text>
-        <text x="302" y="68" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.8)" font-family="sans-serif">time saved</text>
-        <text x="258" y="90" font-size="9.5" fill="rgba(255,255,255,0.9)" font-family="sans-serif" font-weight="600">3000 agents</text>
-        <text x="258" y="104" font-size="8.5" fill="rgba(255,255,255,0.6)" font-family="sans-serif">on every query</text>
-        <text x="258" y="122" font-size="9.5" fill="rgba(255,255,255,0.9)" font-family="sans-serif" font-weight="600">0 defects</text>
-        <text x="258" y="136" font-size="8.5" fill="rgba(255,255,255,0.6)" font-family="sans-serif">post-release</text>
+        <!-- Divider -->
+        <line x1="160" y1="40" x2="160" y2="160" stroke="rgba(255,255,255,0.2)" stroke-width="0.8"/>
+        <!-- Arrow -->
+        <text x="160" y="105" text-anchor="middle" font-size="16" fill="rgba(255,255,255,0.7)" font-family="sans-serif">→</text>
+
+        <!-- RIGHT GAUGE: AFTER = 50s. 50s on 0-60 scale: position from LEFT (60s end) = (60-50)/60 = 16.7%. Arc from left = 0.167*172.8 ≈ 28.8. Needle angle from -90deg: 0.167*180 = 30deg → -90+30 = -60deg -->
+        <text x="272" y="42" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.6)" font-family="sans-serif">AFTER</text>
+        <!-- Track -->
+        <path d="M 217 130 A 55 55 0 0 1 327 130" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="14" stroke-linecap="round"/>
+        <!-- Filled: 28.8 of 172.8 (the small portion from 60s down to 50s) -->
+        <path d="M 217 130 A 55 55 0 0 1 327 130" fill="none" stroke="rgba(255,255,255,0.88)" stroke-width="14" stroke-linecap="round"
+          stroke-dasharray="0 172.8" class="anim-line" style="--dashend:28.8;animation-delay:0.4s"/>
+        <!-- Scale labels -->
+        <text x="210" y="143" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.55)" font-family="sans-serif">60s</text>
+        <text x="272" y="80" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.35)" font-family="sans-serif">30s</text>
+        <text x="334" y="143" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.55)" font-family="sans-serif">0s</text>
+        <!-- Needle: 50s = 16.7% from left → rotate -60deg from center -->
+        <line x1="272" y1="130" x2="272" y2="75" stroke="#fff" stroke-width="2.5" stroke-linecap="round" transform="rotate(-60 272 130)" filter="url(#ds6)"/>
+        <circle cx="272" cy="130" r="5" fill="#fff" filter="url(#ds6)"/>
+        <!-- Reading -->
+        <text x="272" y="118" text-anchor="middle" font-size="22" font-weight="800" fill="#fff" font-family="sans-serif" filter="url(#ds6)" class="anim-num">50s</text>
+
+        <!-- Bottom stat -->
+        <text x="180" y="170" text-anchor="middle" font-size="11" font-weight="700" fill="rgba(255,255,255,0.9)" font-family="sans-serif" class="anim-num">17% faster · 3000 agents · 0 defects post-release</text>
       </svg>
     </div>
     <div class="pv6-body">
@@ -1424,6 +1409,37 @@
     // Fix: restore scroll position to top of hero on page load/refresh
     if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
     window.addEventListener('load', function() { window.scrollTo(0, 0); });
+  </script>
+
+  <script>
+    // Trigger project card animations when cards scroll into view (once only)
+    (function(){
+      var animated = false;
+      function triggerAnims(){
+        if(animated) return;
+        var cards = document.querySelectorAll('.pv6');
+        var triggered = false;
+        cards.forEach(function(card){
+          var rect = card.getBoundingClientRect();
+          if(rect.top < window.innerHeight - 40){
+            triggered = true;
+          }
+        });
+        if(triggered){
+          animated = true;
+          document.querySelectorAll('.anim-bar,.anim-line,.anim-donut,.anim-num').forEach(function(el){
+            el.classList.add('anim-active');
+          });
+          // Also trigger ring fills
+          document.querySelectorAll('.ring-fill').forEach(function(el){
+            var dash = el.style.getPropertyValue('--dash') || el.getAttribute('style').match(/--dash:([\d.]+)/)?.[1];
+            if(dash){ el.style.strokeDasharray = dash + ' 119.4'; }
+          });
+        }
+      }
+      window.addEventListener('scroll', triggerAnims, {passive:true});
+      window.addEventListener('load', function(){ setTimeout(triggerAnims, 400); });
+    })();
   </script>
 
 </body>
