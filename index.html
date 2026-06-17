@@ -104,22 +104,21 @@
               </a>
             </div>
 
-            <!-- Professional Capabilities — Style 3: bordered card with eyebrow label -->
+            <!-- Professional Capabilities — tinted, centered, bold -->
             <p style="font-size:10px;font-weight:700;color:#bbb;letter-spacing:1.4px;text-transform:uppercase;margin-bottom:7px;">Professional Capabilities</p>
             <style>
               .cap-grid-a{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:10px;}
-              .cap-tile{border:1px solid #e3e3e3;border-radius:8px;padding:9px 12px;background:#fff;min-height:46px;display:flex;flex-direction:column;justify-content:center;}
-              .cap-tile .eyebrow{margin:0 0 2px;font-size:9px;letter-spacing:0.5px;text-transform:uppercase;color:#a6a6a6;}
-              .cap-tile span{font-size:12.5px;font-weight:700;line-height:1.25;color:#1a2340;}
+              .cap-tile{border:1px solid #dde3ec;border-radius:8px;padding:14px 10px;background:#eef1f6;min-height:64px;display:flex;align-items:center;justify-content:center;text-align:center;}
+              .cap-tile span{font-size:14.5px;font-weight:800;line-height:1.25;color:#1a2340;}
               @media(max-width:767px){.cap-grid-a{grid-template-columns:repeat(2,1fr);}}
             </style>
             <div class="cap-grid-a" data-aos="fade-up" data-aos-delay="350">
-              <div class="cap-tile"><p class="eyebrow">Capability</p><span>Enterprise Transformation</span></div>
-              <div class="cap-tile"><p class="eyebrow">Capability</p><span>Stakeholder Management</span></div>
-              <div class="cap-tile"><p class="eyebrow">Capability</p><span>AI Enthusiast</span></div>
-              <div class="cap-tile"><p class="eyebrow">Capability</p><span>Process Optimisation</span></div>
-              <div class="cap-tile"><p class="eyebrow">Capability</p><span>Platform Delivery</span></div>
-              <div class="cap-tile"><p class="eyebrow">Capability</p><span>Cross-Functional Leadership</span></div>
+              <div class="cap-tile"><span>Enterprise Transformation</span></div>
+              <div class="cap-tile"><span>Stakeholder Management</span></div>
+              <div class="cap-tile"><span>AI Enthusiast</span></div>
+              <div class="cap-tile"><span>Process Optimisation</span></div>
+              <div class="cap-tile"><span>Platform Delivery</span></div>
+              <div class="cap-tile"><span>Cross-Functional Leadership</span></div>
             </div>
 
             <!-- Divider -->
@@ -130,8 +129,9 @@
             <style>
               .ring-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:4px;}
               .ring-card{text-align:center;}
-              .ring-num{font-size:17px;font-weight:900;color:#1a2340;line-height:1;margin-top:5px;}
-              .ring-lbl{font-size:9.5px;color:#888;line-height:1.35;margin-top:2px;}
+              .ring-wrap{position:relative;width:84px;height:84px;margin:0 auto;}
+              .ring-num{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:900;color:#1a2340;}
+              .ring-lbl{font-size:12px;font-weight:600;color:#666;line-height:1.4;margin-top:8px;}
               .ring-track{fill:none;stroke-width:5;}
               .ring-fill{fill:none;stroke-width:5;stroke-linecap:round;transform-origin:50% 50%;transform:rotate(-90deg);}
               @keyframes ringAnim{from{stroke-dasharray:0 119.4}to{stroke-dasharray:var(--dash) 119.4}}
@@ -141,31 +141,37 @@
 
               <!-- 14+ yrs = 14/20 = 70% of full circle. Circumference of r=19: 2*π*19 ≈ 119.4. 70% = 83.6 -->
               <div class="ring-card">
-                <svg width="80" height="80" viewBox="0 0 44 44">
-                  <circle class="ring-track" cx="22" cy="22" r="19" stroke="#ffe4cc"/>
-                  <circle class="ring-fill" cx="22" cy="22" r="19" stroke="#e67e22" style="--dash:83.6;animation-delay:0.3s;stroke-dasharray:0 119.4"/>
-                </svg>
-                <div class="ring-num">14+</div>
+                <div class="ring-wrap">
+                  <svg width="84" height="84" viewBox="0 0 44 44">
+                    <circle class="ring-track" cx="22" cy="22" r="19" stroke="#ffe4cc"/>
+                    <circle class="ring-fill" cx="22" cy="22" r="19" stroke="#e67e22" style="--dash:83.6;animation-delay:0.3s;stroke-dasharray:0 119.4"/>
+                  </svg>
+                  <div class="ring-num">14+</div>
+                </div>
                 <div class="ring-lbl">Years Industry<br>Experience</div>
               </div>
 
               <!-- 7+ yrs = 7/20 = 35% of full circle. 35% of 119.4 = 41.8 -->
               <div class="ring-card">
-                <svg width="80" height="80" viewBox="0 0 44 44">
-                  <circle class="ring-track" cx="22" cy="22" r="19" stroke="#e8d5ff"/>
-                  <circle class="ring-fill" cx="22" cy="22" r="19" stroke="#9333ea" style="--dash:41.8;animation-delay:0.5s;stroke-dasharray:0 119.4"/>
-                </svg>
-                <div class="ring-num">7+</div>
+                <div class="ring-wrap">
+                  <svg width="84" height="84" viewBox="0 0 44 44">
+                    <circle class="ring-track" cx="22" cy="22" r="19" stroke="#e8d5ff"/>
+                    <circle class="ring-fill" cx="22" cy="22" r="19" stroke="#9333ea" style="--dash:41.8;animation-delay:0.5s;stroke-dasharray:0 119.4"/>
+                  </svg>
+                  <div class="ring-num">7+</div>
+                </div>
                 <div class="ring-lbl">Years BA<br>Experience</div>
               </div>
 
               <!-- 15+ projects = 15/20 = 75% of full circle. 75% of 119.4 = 89.6 -->
               <div class="ring-card">
-                <svg width="80" height="80" viewBox="0 0 44 44">
-                  <circle class="ring-track" cx="22" cy="22" r="19" stroke="#ccf0ec"/>
-                  <circle class="ring-fill" cx="22" cy="22" r="19" stroke="#0d9488" style="--dash:89.6;animation-delay:0.7s;stroke-dasharray:0 119.4"/>
-                </svg>
-                <div class="ring-num">15+</div>
+                <div class="ring-wrap">
+                  <svg width="84" height="84" viewBox="0 0 44 44">
+                    <circle class="ring-track" cx="22" cy="22" r="19" stroke="#ccf0ec"/>
+                    <circle class="ring-fill" cx="22" cy="22" r="19" stroke="#0d9488" style="--dash:89.6;animation-delay:0.7s;stroke-dasharray:0 119.4"/>
+                  </svg>
+                  <div class="ring-num">15+</div>
+                </div>
                 <div class="ring-lbl">Transformation<br>Initiatives Delivered</div>
               </div>
 
@@ -178,13 +184,14 @@
               <img src="assets/img/profile/Profile_Hero_section.png" alt="Faruk Ahmed" class="img-fluid rounded-4" style="max-height:560px;width:100%;object-fit:cover;object-position:top;position:relative;z-index:1;" data-aos="zoom-out" data-aos-delay="300">
               <div class="shape-1"></div>
               <div class="shape-2"></div>
-              <div style="position:absolute;bottom:18px;left:18px;right:18px;background:#fff;border-radius:10px;padding:10px 14px;box-shadow:0 4px 18px rgba(0,0,0,0.25);z-index:999;">
-                <p style="margin:0;font-size:13px;color:#333;display:flex;align-items:center;gap:6px;">
-                  <i class="bi bi-geo-alt-fill" style="color:#e67e22;font-size:13px;"></i>
+              <div style="position:absolute;bottom:18px;left:18px;right:18px;background:#fff;border-radius:10px;padding:12px 16px;box-shadow:0 4px 18px rgba(0,0,0,0.25);z-index:999;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:nowrap;">
+                <p style="margin:0;font-size:15px;font-weight:700;color:#222;display:flex;align-items:center;gap:6px;white-space:nowrap;">
+                  <i class="bi bi-geo-alt-fill" style="color:#e67e22;font-size:15px;"></i>
                   Auckland, New Zealand
                 </p>
-                <p style="margin:3px 0 0;font-size:12px;color:#16a34a;font-weight:700;display:flex;align-items:center;gap:6px;">
-                  <span style="width:7px;height:7px;background:#22c55e;border-radius:50%;display:inline-block;"></span>
+                <span style="width:1px;height:16px;background:#ddd;"></span>
+                <p style="margin:0;font-size:15px;color:#16a34a;font-weight:700;display:flex;align-items:center;gap:6px;white-space:nowrap;">
+                  <span style="width:8px;height:8px;background:#22c55e;border-radius:50%;display:inline-block;"></span>
                   Open to Opportunity
                 </p>
               </div>
@@ -213,9 +220,52 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row align-items-start">
-          <div class="col-lg-6 position-relative" style="margin-left:-60px;" data-aos="fade-right" data-aos-delay="200">
-            <div class="about-image">
-              <img src="assets/img/profile/Profile_About_Section.jpg" alt="Faruk Ahmed" class="img-fluid rounded-4" style="max-height:550px;width:auto;object-fit:cover;object-position:top;margin-left:90px;">
+          <div class="col-lg-6 position-relative" data-aos="fade-right" data-aos-delay="200">
+            <div class="about-image" style="background:#fff;border-radius:16px;padding:18px 8px;">
+              <svg viewBox="0 0 460 620" style="width:100%;height:auto;font-family:Arial,sans-serif;">
+                <!-- Symmetric S-curve ribbon, corner-to-corner: bottom-left (2010) to top-right (Present) -->
+                <path d="M40,580 C40,500 230,500 230,420 C230,340 40,340 40,260 C40,180 230,180 230,100 C230,40 420,40 420,40"
+                  fill="none" stroke="#eef1f6" stroke-width="20" stroke-linecap="round"/>
+
+                <!-- Node 1: 2010 Customer Manager -->
+                <circle cx="40" cy="580" r="9" fill="#9aa0ab"/>
+                <text x="58" y="568" font-size="11" font-weight="800" fill="#1a2340">2010 – 2013</text>
+                <text x="58" y="584" font-size="11" font-weight="700" fill="#1a2340">Customer Manager</text>
+                <text x="58" y="598" font-size="9.5" fill="#888">Grameenphone (Telenor)</text>
+                <text x="58" y="612" font-size="9.5" fill="#e67e22" font-weight="700">AHT reduced 320s → 270s (−16%)</text>
+
+                <!-- Node 2: 2013 Senior Executive -->
+                <circle cx="230" cy="420" r="9" fill="#9aa0ab"/>
+                <text x="248" y="408" font-size="11" font-weight="800" fill="#1a2340">2013 – 2017</text>
+                <text x="248" y="424" font-size="11" font-weight="700" fill="#1a2340">Senior Executive</text>
+                <text x="248" y="438" font-size="9.5" fill="#888">Grameenphone (Telenor)</text>
+                <text x="248" y="452" font-size="9.5" fill="#e67e22" font-weight="700">SLA adherence 85% → 93%; 470+ trained</text>
+
+                <!-- Node 3: 2017 Business System Analyst -->
+                <circle cx="40" cy="260" r="11" fill="#e67e22"/>
+                <text x="58" y="248" font-size="11" font-weight="800" fill="#1a2340">2017 – 2020</text>
+                <text x="58" y="264" font-size="11" font-weight="700" fill="#1a2340">Business System Analyst</text>
+                <text x="58" y="278" font-size="9.5" fill="#888">Grameenphone (Telenor)</text>
+                <text x="58" y="292" font-size="9.5" fill="#e67e22" font-weight="700">CRM 360°: 9 tools → 1, steps 10 → 4 (−60%)</text>
+
+                <!-- Node 4: 2020 Project Specialist -->
+                <circle cx="230" cy="100" r="11" fill="#e67e22"/>
+                <text x="248" y="88" font-size="11" font-weight="800" fill="#1a2340">2020 – 2023</text>
+                <text x="248" y="104" font-size="11" font-weight="700" fill="#1a2340">Project Specialist</text>
+                <text x="248" y="118" font-size="9.5" fill="#888">Grameenphone (Telenor)</text>
+                <text x="248" y="132" font-size="9.5" fill="#e67e22" font-weight="700">System incidents 82 → 41 (−50% over 2 yrs)</text>
+
+                <!-- Node 5: 2023 Project Coordinator -->
+                <circle cx="330" cy="40" r="9" fill="#9aa0ab"/>
+                <text x="330" y="20" font-size="11" font-weight="800" fill="#1a2340" text-anchor="middle">2023 – 2024 · Project Coordinator</text>
+                <text x="330" y="62" font-size="9.5" fill="#888" text-anchor="middle">Studio Dev Hub · Release cycle −30%</text>
+
+                <!-- Node 6: Present, WeSmile -->
+                <circle cx="420" cy="40" r="13" fill="#1a2340"/>
+                <text x="395" y="14" font-size="11" font-weight="800" fill="#e67e22" text-anchor="end">2025 – Present</text>
+                <text x="395" y="28" font-size="11" font-weight="800" fill="#1a2340" text-anchor="end">Business Analyst</text>
+                <text x="395" y="65" font-size="9.5" fill="#888" text-anchor="end">WeSmile, Auckland — open to next role</text>
+              </svg>
             </div>
           </div>
 
@@ -846,50 +896,32 @@
     <div class="pv6-vis pv6-v6">
       <svg style="position:absolute;inset:0;width:100%;height:100%" viewBox="0 0 360 190" preserveAspectRatio="xMidYMid meet">
         <defs><filter id="ds6"><feDropShadow dx="0" dy="1" stdDeviation="2.5" flood-color="rgba(0,0,0,0.35)"/></filter></defs>
-        <text x="180" y="18" text-anchor="middle" font-size="10.5" fill="rgba(255,255,255,0.9)" font-family="sans-serif" font-weight="600">Query handling time (seconds)</text>
+        <text x="180" y="16" text-anchor="middle" font-size="10.5" fill="rgba(255,255,255,0.9)" font-family="sans-serif" font-weight="600">Query handling time (seconds)</text>
 
-        <!-- LEFT GAUGE: BEFORE = 60s (needle at far left = 60s end, -90deg) -->
-        <!-- Gauge centre: (88, 130). Radius 55. Arc: M 33 130 A 55 55 0 0 1 143 130 -->
-        <text x="88" y="42" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.6)" font-family="sans-serif">BEFORE</text>
+        <!-- Single gauge, scale 0-60s. Centre (180,128) radius 70. Arc spans 180deg: M 110 128 A 70 70 0 0 1 250 128 -->
         <!-- Track -->
-        <path d="M 33 130 A 55 55 0 0 1 143 130" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="14" stroke-linecap="round"/>
-        <!-- Full arc filled (100% = 60s = left end). dasharray = π*55 ≈ 172.8 -->
-        <path d="M 33 130 A 55 55 0 0 1 143 130" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="14" stroke-linecap="round"
-          stroke-dasharray="0 172.8" class="anim-line" style="--dashend:172.8"/>
+        <path d="M 110 128 A 70 70 0 0 1 250 128" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="16" stroke-linecap="round"/>
+        <!-- BEFORE marker arc (ghost, full 60s position reference) drawn first, lighter -->
+        <path d="M 110 128 A 70 70 0 0 1 250 128" fill="none" stroke="rgba(255,255,255,0.32)" stroke-width="16" stroke-linecap="round"
+          stroke-dasharray="0 219.8" class="anim-line" style="--dashend:219.8;animation-delay:0.2s"/>
+        <!-- AFTER arc overlay (current state, bright, shorter — 50/60 of the way) -->
+        <path d="M 110 128 A 70 70 0 0 1 250 128" fill="none" stroke="#ffffff" stroke-width="16" stroke-linecap="round"
+          stroke-dasharray="0 219.8" class="anim-line" style="--dashend:183.2;animation-delay:0.6s"/>
         <!-- Scale labels -->
-        <text x="26" y="143" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.55)" font-family="sans-serif">60s</text>
-        <text x="88" y="80" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.35)" font-family="sans-serif">30s</text>
-        <text x="150" y="143" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.55)" font-family="sans-serif">0s</text>
-        <!-- Needle: 60s = 0% from left = stays at -90deg from vertical -->
-        <line x1="88" y1="130" x2="88" y2="75" stroke="#fff" stroke-width="2.5" stroke-linecap="round" transform="rotate(-90 88 130)" filter="url(#ds6)"/>
-        <circle cx="88" cy="130" r="5" fill="#fff" filter="url(#ds6)"/>
-        <!-- Reading -->
-        <text x="88" y="118" text-anchor="middle" font-size="22" font-weight="800" fill="#fff" font-family="sans-serif" filter="url(#ds6)" class="anim-num">60s</text>
-
-        <!-- Divider -->
-        <line x1="160" y1="40" x2="160" y2="160" stroke="rgba(255,255,255,0.2)" stroke-width="0.8"/>
-        <!-- Arrow -->
-        <text x="160" y="105" text-anchor="middle" font-size="16" fill="rgba(255,255,255,0.7)" font-family="sans-serif">→</text>
-
-        <!-- RIGHT GAUGE: AFTER = 50s. 50s on 0-60 scale: position from LEFT (60s end) = (60-50)/60 = 16.7%. Arc from left = 0.167*172.8 ≈ 28.8. Needle angle from -90deg: 0.167*180 = 30deg → -90+30 = -60deg -->
-        <text x="272" y="42" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.6)" font-family="sans-serif">AFTER</text>
-        <!-- Track -->
-        <path d="M 217 130 A 55 55 0 0 1 327 130" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="14" stroke-linecap="round"/>
-        <!-- Filled: 28.8 of 172.8 (the small portion from 60s down to 50s) -->
-        <path d="M 217 130 A 55 55 0 0 1 327 130" fill="none" stroke="rgba(255,255,255,0.88)" stroke-width="14" stroke-linecap="round"
-          stroke-dasharray="0 172.8" class="anim-line" style="--dashend:28.8;animation-delay:0.4s"/>
-        <!-- Scale labels -->
-        <text x="210" y="143" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.55)" font-family="sans-serif">60s</text>
-        <text x="272" y="80" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.35)" font-family="sans-serif">30s</text>
-        <text x="334" y="143" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.55)" font-family="sans-serif">0s</text>
-        <!-- Needle: 50s = 16.7% from left → rotate -60deg from center -->
-        <line x1="272" y1="130" x2="272" y2="75" stroke="#fff" stroke-width="2.5" stroke-linecap="round" transform="rotate(-60 272 130)" filter="url(#ds6)"/>
-        <circle cx="272" cy="130" r="5" fill="#fff" filter="url(#ds6)"/>
-        <!-- Reading -->
-        <text x="272" y="118" text-anchor="middle" font-size="22" font-weight="800" fill="#fff" font-family="sans-serif" filter="url(#ds6)" class="anim-num">50s</text>
+        <text x="103" y="142" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.6)" font-family="sans-serif">60s</text>
+        <text x="180" y="64" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.4)" font-family="sans-serif">30s</text>
+        <text x="257" y="142" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.6)" font-family="sans-serif">0s</text>
+        <!-- Needle points to AFTER value: 50s = 10/60 of arc from the 60s end = 30deg past start -->
+        <line x1="180" y1="128" x2="180" y2="64" stroke="#fff" stroke-width="3" stroke-linecap="round" transform="rotate(-60 180 128)" filter="url(#ds6)"/>
+        <circle cx="180" cy="128" r="6" fill="#fff" filter="url(#ds6)"/>
+        <!-- Before / after readout -->
+        <text x="110" y="160" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.55)" font-family="sans-serif">BEFORE</text>
+        <text x="110" y="178" text-anchor="middle" font-size="15" font-weight="800" fill="rgba(255,255,255,0.75)" font-family="sans-serif" class="anim-num">60s</text>
+        <text x="250" y="160" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.85)" font-family="sans-serif">AFTER</text>
+        <text x="250" y="178" text-anchor="middle" font-size="15" font-weight="800" fill="#fff" font-family="sans-serif" class="anim-num">50s</text>
 
         <!-- Bottom stat -->
-        <text x="180" y="170" text-anchor="middle" font-size="11" font-weight="700" fill="rgba(255,255,255,0.9)" font-family="sans-serif" class="anim-num">17% faster · 3000 agents · 0 defects post-release</text>
+        <text x="180" y="34" text-anchor="middle" font-size="11" font-weight="700" fill="rgba(255,255,255,0.9)" font-family="sans-serif" class="anim-num">17% faster · 3000 agents · 0 defects post-release</text>
       </svg>
     </div>
     <div class="pv6-body">
