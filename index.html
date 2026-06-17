@@ -219,62 +219,89 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <!-- Full-width career journey: U-shaped milestone road -->
+        <!-- Full-width career journey roadmap (reference-style: alternating labels, icon nodes, rolling path) -->
         <div class="row">
           <div class="col-12" data-aos="fade-up" data-aos-delay="150">
-            <div style="background:#fff;border-radius:16px;padding:28px 12px 16px;overflow-x:auto;">
-              <svg viewBox="0 0 1320 420" style="width:100%;height:auto;min-width:900px;font-family:Arial,sans-serif;">
-                <!-- U-shaped path: dips down through the middle, rises back up at the end -->
-                <path d="M100,120 C240,120 240,300 380,300 L630,300 C780,300 780,120 920,120 L1080,120 C1160,120 1160,200 1230,200"
-                  fill="none" stroke="#1a2340" stroke-width="3"/>
+            <div style="background:#fff;border-radius:16px;padding:20px 12px;overflow-x:auto;">
+              <svg viewBox="0 0 1680 820" style="width:100%;height:auto;min-width:1150px;font-family:Arial,sans-serif;">
 
-                <!-- Node 1: 2010 Customer Manager -->
-                <circle cx="100" cy="120" r="9" fill="#1a2340"/>
-                <text x="100" y="92" font-size="13" font-weight="800" fill="#888" text-anchor="middle">2010</text>
-                <text x="100" y="150" font-size="14" font-weight="800" fill="#1a2340" text-anchor="middle">Customer Manager</text>
-                <text x="100" y="170" font-size="11" fill="#888" text-anchor="middle">Grameenphone (Telenor)</text>
-                <text x="100" y="190" font-size="11" font-weight="700" fill="#e67e22" text-anchor="middle">AHT 320s → 270s (−16%)</text>
+                <!-- Rolling wave path through all node x-positions, gentle undulation -->
+                <path d="M90,500 C220,440 280,560 410,560 C540,560 600,440 730,440 C860,440 920,560 1050,560 C1150,560 1200,500 1300,500 C1370,500 1450,440 1540,440"
+                  fill="none" stroke="#d9dde3" stroke-width="14" stroke-linecap="round"/>
 
-                <!-- Node 2: 2013 Senior Executive -->
-                <circle cx="380" cy="300" r="9" fill="#1a2340"/>
-                <text x="380" y="332" font-size="13" font-weight="800" fill="#888" text-anchor="middle">2013</text>
-                <text x="380" y="350" font-size="14" font-weight="800" fill="#1a2340" text-anchor="middle">Senior Executive</text>
-                <text x="380" y="370" font-size="11" fill="#888" text-anchor="middle">Grameenphone (Telenor)</text>
-                <text x="380" y="390" font-size="11" font-weight="700" fill="#e67e22" text-anchor="middle">SLA 85% → 93%; 470+ trained</text>
+                <!-- ===== NODE 1: 2010 — text ABOVE, circle on path at (90,500) ===== -->
+                <circle cx="90" cy="500" r="34" fill="#1a2340"/>
+                <circle cx="90" cy="500" r="34" fill="none" stroke="#fff" stroke-width="4"/>
+                <text x="90" y="495" font-size="13" fill="#fff" text-anchor="middle" font-weight="700">2010</text>
+                <text x="90" y="512" font-size="9" fill="#fff" text-anchor="middle">–2013</text>
+                <text x="90" y="330" font-size="16" font-weight="800" fill="#1a2340" text-anchor="middle">Customer Manager</text>
+                <text x="90" y="352" font-size="11" fill="#888" text-anchor="middle">Grameenphone (Telenor)</text>
+                <text x="90" y="376" font-size="11.5" font-weight="700" fill="#e67e22" text-anchor="middle">
+                  <tspan x="90" dy="0">AHT reduced</tspan>
+                  <tspan x="90" dy="16">320s → 270s (−16%)</tspan>
+                </text>
 
-                <!-- Node 3: 2017 Business System Analyst -->
-                <circle cx="500" cy="300" r="11" fill="#1a2340"/>
-                <text x="500" y="332" font-size="13" font-weight="800" fill="#888" text-anchor="middle">2017</text>
-                <text x="500" y="350" font-size="14" font-weight="800" fill="#1a2340" text-anchor="middle">Business System Analyst</text>
-                <text x="500" y="370" font-size="11" fill="#888" text-anchor="middle">Grameenphone (Telenor)</text>
-                <text x="500" y="390" font-size="11" font-weight="700" fill="#e67e22" text-anchor="middle">CRM 360°: 9 tools → 1 (−60% steps)</text>
+                <!-- ===== NODE 2: 2013 — text BELOW, circle on path at (410,560) ===== -->
+                <circle cx="410" cy="560" r="34" fill="#1a2340"/>
+                <circle cx="410" cy="560" r="34" fill="none" stroke="#fff" stroke-width="4"/>
+                <text x="410" y="555" font-size="13" fill="#fff" text-anchor="middle" font-weight="700">2013</text>
+                <text x="410" y="572" font-size="9" fill="#fff" text-anchor="middle">–2017</text>
+                <text x="410" y="650" font-size="16" font-weight="800" fill="#1a2340" text-anchor="middle">Senior Executive</text>
+                <text x="410" y="672" font-size="11" fill="#888" text-anchor="middle">Grameenphone (Telenor)</text>
+                <text x="410" y="696" font-size="11.5" font-weight="700" fill="#e67e22" text-anchor="middle">
+                  <tspan x="410" dy="0">SLA 85% → 93%</tspan>
+                  <tspan x="410" dy="16">470+ agents trained</tspan>
+                </text>
 
-                <!-- Node 4: 2020 Project Specialist -->
-                <circle cx="780" cy="300" r="11" fill="#1a2340"/>
-                <text x="780" y="332" font-size="13" font-weight="800" fill="#888" text-anchor="middle">2020</text>
-                <text x="780" y="350" font-size="14" font-weight="800" fill="#1a2340" text-anchor="middle">Project Specialist</text>
-                <text x="780" y="370" font-size="11" fill="#888" text-anchor="middle">Grameenphone (Telenor)</text>
-                <text x="780" y="390" font-size="11" font-weight="700" fill="#e67e22" text-anchor="middle">Incidents 82 → 41 (−50%)</text>
+                <!-- ===== NODE 3: 2017 — text ABOVE, circle on path at (730,440) ===== -->
+                <circle cx="730" cy="440" r="38" fill="#e67e22"/>
+                <circle cx="730" cy="440" r="38" fill="none" stroke="#fff" stroke-width="4"/>
+                <text x="730" y="434" font-size="14" fill="#fff" text-anchor="middle" font-weight="700">2017</text>
+                <text x="730" y="452" font-size="9.5" fill="#fff" text-anchor="middle">–2020</text>
+                <text x="730" y="270" font-size="17" font-weight="800" fill="#1a2340" text-anchor="middle">Business System Analyst</text>
+                <text x="730" y="292" font-size="11" fill="#888" text-anchor="middle">Grameenphone (Telenor)</text>
+                <text x="730" y="316" font-size="11.5" font-weight="700" fill="#e67e22" text-anchor="middle">
+                  <tspan x="730" dy="0">CRM 360°: 9 tools → 1</tspan>
+                  <tspan x="730" dy="16">Process steps −60%</tspan>
+                </text>
 
-                <!-- Node 5: 2023 Project Coordinator -->
-                <circle cx="920" cy="120" r="9" fill="#1a2340"/>
-                <text x="920" y="92" font-size="13" font-weight="800" fill="#888" text-anchor="middle">2023</text>
-                <text x="920" y="150" font-size="14" font-weight="800" fill="#1a2340" text-anchor="middle">Project Coordinator</text>
-                <text x="920" y="170" font-size="11" fill="#888" text-anchor="middle">Studio Dev Hub</text>
-                <text x="920" y="190" font-size="11" font-weight="700" fill="#e67e22" text-anchor="middle">Release cycle −30%</text>
+                <!-- ===== NODE 4: 2020 — text BELOW, circle on path at (1050,560) ===== -->
+                <circle cx="1050" cy="560" r="38" fill="#e67e22"/>
+                <circle cx="1050" cy="560" r="38" fill="none" stroke="#fff" stroke-width="4"/>
+                <text x="1050" y="554" font-size="14" fill="#fff" text-anchor="middle" font-weight="700">2020</text>
+                <text x="1050" y="572" font-size="9.5" fill="#fff" text-anchor="middle">–2023</text>
+                <text x="1050" y="650" font-size="16" font-weight="800" fill="#1a2340" text-anchor="middle">Project Specialist</text>
+                <text x="1050" y="672" font-size="11" fill="#888" text-anchor="middle">Grameenphone (Telenor)</text>
+                <text x="1050" y="696" font-size="11.5" font-weight="700" fill="#e67e22" text-anchor="middle">
+                  <tspan x="1050" dy="0">System incidents</tspan>
+                  <tspan x="1050" dy="16">82 → 41 (−50%)</tspan>
+                </text>
 
-                <!-- Node 6: 2025-Present Business Analyst -->
-                <circle cx="1230" cy="200" r="12" fill="#1a2340"/>
-                <text x="1230" y="92" font-size="13" font-weight="800" fill="#888" text-anchor="middle">2025–Present</text>
-                <text x="1230" y="150" font-size="14" font-weight="800" fill="#1a2340" text-anchor="middle">Business Analyst</text>
-                <text x="1230" y="170" font-size="11" fill="#888" text-anchor="middle">WeSmile, Auckland</text>
-                <text x="1230" y="232" font-size="11" font-weight="700" fill="#e67e22" text-anchor="middle">User-first platform redesign</text>
+                <!-- ===== NODE 5: 2023 — text ABOVE, circle on path at (1300,500) ===== -->
+                <circle cx="1300" cy="500" r="34" fill="#1a2340"/>
+                <circle cx="1300" cy="500" r="34" fill="none" stroke="#fff" stroke-width="4"/>
+                <text x="1300" y="495" font-size="13" fill="#fff" text-anchor="middle" font-weight="700">2023</text>
+                <text x="1300" y="512" font-size="9" fill="#fff" text-anchor="middle">–2024</text>
+                <text x="1300" y="345" font-size="16" font-weight="800" fill="#1a2340" text-anchor="middle">Project Coordinator</text>
+                <text x="1300" y="367" font-size="11" fill="#888" text-anchor="middle">Studio Dev Hub</text>
+                <text x="1300" y="391" font-size="11.5" font-weight="700" fill="#e67e22" text-anchor="middle">Release cycle −30%</text>
 
-                <!-- Node 7: open dot — next opportunity, only orange node -->
-                <line x1="1230" y1="200" x2="1230" y2="280" stroke="#e67e22" stroke-width="2" stroke-dasharray="3 3"/>
-                <circle cx="1230" cy="300" r="13" fill="none" stroke="#e67e22" stroke-width="3" stroke-dasharray="3 3"/>
-                <text x="1230" y="332" font-size="13" font-weight="800" fill="#e67e22" text-anchor="middle">Open to the</text>
-                <text x="1230" y="350" font-size="13" font-weight="800" fill="#e67e22" text-anchor="middle">Next Opportunity</text>
+                <!-- ===== NODE 6: 2025–Present — text BELOW, circle on path at (1540,440) ===== -->
+                <circle cx="1540" cy="440" r="36" fill="#1a2340"/>
+                <circle cx="1540" cy="440" r="36" fill="none" stroke="#fff" stroke-width="4"/>
+                <text x="1540" y="430" font-size="12" fill="#fff" text-anchor="middle" font-weight="700">2025–</text>
+                <text x="1540" y="446" font-size="12" fill="#fff" text-anchor="middle" font-weight="700">Present</text>
+                <text x="1540" y="610" font-size="16" font-weight="800" fill="#1a2340" text-anchor="middle">Business Analyst</text>
+                <text x="1540" y="632" font-size="11" fill="#888" text-anchor="middle">WeSmile, Auckland</text>
+                <text x="1540" y="656" font-size="11.5" font-weight="700" fill="#e67e22" text-anchor="middle">User-first platform redesign</text>
+
+                <!-- ===== NODE 7: Open dot — dashed orange, isolated, below node 6 ===== -->
+                <line x1="1540" y1="476" x2="1540" y2="700" stroke="#e67e22" stroke-width="2" stroke-dasharray="4 4"/>
+                <circle cx="1540" cy="730" r="30" fill="none" stroke="#e67e22" stroke-width="3" stroke-dasharray="4 4"/>
+                <text x="1540" y="725" font-size="11" font-weight="800" fill="#e67e22" text-anchor="middle">OPEN</text>
+                <text x="1540" y="740" font-size="9" font-weight="700" fill="#e67e22" text-anchor="middle">ROLE</text>
+                <text x="1540" y="785" font-size="13" font-weight="800" fill="#e67e22" text-anchor="middle">Open to the Next Opportunity</text>
+
               </svg>
             </div>
           </div>
